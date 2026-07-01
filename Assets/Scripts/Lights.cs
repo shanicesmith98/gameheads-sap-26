@@ -6,45 +6,37 @@ public class Lights : MonoBehaviour
     public bool Moves;
     public float Speed = 5f;
     public bool endPlatform; // If the light reaches the end of the platform, it goes the other way.
+    private float savedPosition;
+
    
     void Start()
     {
-        
+        savedPosition = transform.position.x;
     }
 
     void Update()
     {
-        if(touchingLight)
-        {
-            //decrease fear meter
-        }
-        else
-        {
-            //increase fear meter
-        }
-
         if(Moves)
         {
+            if(transform.position.x < savedPosition) //If the light goes back to the place where it started, it goes the other way.
+            {
+            Speed = Speed * -1;
+            }
             if(endPlatform)
             {
-                endPlatform = false;
-                Speed = Speed * -1;
+            Speed = Speed * -1;
+            endPlatform = false;
             }
-            
             transform.Translate(Vector2.right * Speed * Time.deltaTime);
-
-        }
-        
-    }
-
-    void OnTriggerEnter2D(Collider2D col){
-        if(col.CompareTag("Player"))
-        {
-            touchingLight = true;
-        }
-        else
-        {
-            touchingLight = false;
         }
     }
+
+    void OnTriggerEnter2D(Collider2D oth)   //If it touches the trigger(which marks the end of the platform), it goes the other way.
+    {
+        if(oth.CompareTag("EndPlatform"))
+        {   
+        endPlatform = true;
+        }
+    }
+
 }

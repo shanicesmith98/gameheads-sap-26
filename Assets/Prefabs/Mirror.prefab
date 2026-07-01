@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7691804847741766720}
   - component: {fileID: 5584185555529818465}
   - component: {fileID: 1418806680114818580}
+  - component: {fileID: 6959117716210268583}
   m_Layer: 0
   m_Name: Mirror
   m_TagString: Untagged
@@ -106,8 +107,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MirrorSpawner
   Projectile: {fileID: 2604338825886680085, guid: e23135993738d4577907fb1bce4cb929, type: 3}
+  clone: {fileID: 2604338825886680085, guid: e23135993738d4577907fb1bce4cb929, type: 3}
   Mirror: {fileID: 4696256185549755694}
-  Spawn: 0
+  PlayerSpawn: 0
+  AutoSpawn: 0
+  FireRate: 1
+  NextSpawn: 0
 --- !u!58 &1418806680114818580
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +149,30 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.015175606, y: 0}
   m_Radius: 0.30218995
+--- !u!50 &6959117716210268583
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2460986058070897549}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
