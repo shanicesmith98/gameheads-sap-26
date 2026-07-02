@@ -5,7 +5,7 @@ public class Lights : MonoBehaviour
     private bool touchingLight;
     public bool Moves;
     public float Speed = 5f;
-    public bool endPlatform; // If the light reaches the end of the platform, it goes the other way.
+   [SerializeField] private bool endPlatform; // If the light reaches the end of the platform, it goes the other way.
     private float savedPosition;
 
    
