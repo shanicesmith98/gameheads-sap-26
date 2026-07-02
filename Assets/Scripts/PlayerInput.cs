@@ -76,7 +76,7 @@ public class PlayerInput : MonoBehaviour
         if(oth.CompareTag("Light"))
         {
             Debug.Log("Is NOT touching light");
-            touchingLight = false;
+            touchingLight = true;
         }
     }
 

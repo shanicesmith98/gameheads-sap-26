@@ -5,7 +5,7 @@ public class Lights : MonoBehaviour
     private bool touchingLight;
     public bool Moves;
     public float Speed = 5f;
-   [SerializeField] private bool endPlatform; // If the light reaches the end of the platform, it goes the other way.
+   private bool endPlatform; // If the light reaches the end of the platform, it goes the other way.
     private float savedPosition;
 
    
@@ -33,7 +33,7 @@ public class Lights : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D oth)   //If it touches the trigger(which marks the end of the platform), it goes the other way.
     {
-        if(oth.CompareTag("EndPlatform"))
+        if(oth.gameObject.CompareTag("EndPlatform"))
         {   
         endPlatform = true;
         }
