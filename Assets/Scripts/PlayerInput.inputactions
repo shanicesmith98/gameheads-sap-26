@@ -1,15 +1,15 @@
 {
     "version": 1,
-    "name": "PlayerMovement",
+    "name": "PlayerInput",
     "maps": [
         {
-            "name": "Gameplay",
-            "id": "5a07d066-2c8e-4242-b47a-7ea0b212fbc8",
+            "name": "PlayerInput",
+            "id": "c2a03897-b7d4-4dae-96ef-6cab79245dce",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "eb689b7a-706e-464d-850b-e9b4237368b2",
+                    "id": "6368c21d-4115-4e02-8a3d-1a10fc42956e",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -17,29 +17,18 @@
                 },
                 {
                     "name": "Jump",
-                    "type": "Value",
-                    "id": "192fd849-ef5e-4328-ae62-7d1f3ed84163",
+                    "type": "Button",
+                    "id": "be21d287-e6da-447f-8fbc-3f9032695154",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "88b4c3c7-f335-42f5-9d41-1399e72a5352",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "WASD",
-                    "id": "941bec78-cf0c-4996-b7f5-d29f12f732b8",
+                    "name": "2D Vector",
+                    "id": "0f744ef6-e5b0-47f2-918f-1f292a167027",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -50,8 +39,8 @@
                 },
                 {
                     "name": "up",
-                    "id": "0c07e5ff-2ae7-4098-bb4e-71112d1ba3fb",
-                    "path": "<Keyboard>/w",
+                    "id": "ce29cb64-6cef-4fdf-a48d-3c583b3aadde",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -61,8 +50,8 @@
                 },
                 {
                     "name": "down",
-                    "id": "a86232e9-ab7a-4d9a-b9cc-d455e96fdf63",
-                    "path": "<Keyboard>/s",
+                    "id": "372d04d6-05de-458e-ba93-a6eacae3ae63",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -72,7 +61,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "b4ebf2b0-557c-42b5-8b6d-3323a465fc17",
+                    "id": "345bcb10-b3c2-4500-9d28-faa7b990104d",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -83,7 +72,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "266d924c-16fe-4cdd-8dd2-53a4ebb35e07",
+                    "id": "1c590bd3-dc8c-4a2c-8ac9-b099d59bd1d6",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -94,19 +83,8 @@
                 },
                 {
                     "name": "",
-                    "id": "a3a1c5bf-1faf-4d16-b38b-900a9b2db5f3",
+                    "id": "970fef97-d31a-4978-a995-b00014dea97d",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "759d304e-bdb3-415e-8fd3-5ada422e003d",
-                    "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
