@@ -20,10 +20,10 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    public void Move(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        Debug.Log("ur ass better be moving on god bro");
+        Debug.Log($"ur ass better be moving on god bro: {moveInput}");
     }
 
     // Update is called once per frame
