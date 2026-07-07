@@ -18,9 +18,9 @@ public class PlayerFear : MonoBehaviour
         UpdateFearUI();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        currentFear += damage * Time.deltaTime;
+        currentFear += damage;
         currentFear = Mathf.Clamp(currentFear, 0, maxFear);
         UpdateFearUI();        
     }

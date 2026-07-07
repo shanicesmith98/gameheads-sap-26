@@ -26,11 +26,11 @@ public class PlayerInput : MonoBehaviour
         {
             if(touchingLight)
             {
-            PF.TakeDamage(-5);
+            PF.TakeDamage(-5 * Time.deltaTime);
             }
             else
             {
-            PF.TakeDamage(5);
+            PF.TakeDamage(5 * Time.deltaTime);
             }
         }
     }
@@ -76,7 +76,7 @@ public class PlayerInput : MonoBehaviour
         if(oth.CompareTag("Light"))
         {
             Debug.Log("Is NOT touching light");
-            touchingLight = true;
+            touchingLight = false;
         }
     }
 
