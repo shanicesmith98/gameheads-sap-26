@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class PlayerInput : MonoBehaviour
 {
@@ -7,7 +10,9 @@ public class PlayerInput : MonoBehaviour
     public float jumpHeight = 5f;
     private bool isGrounded;
     private bool touchingLight;
+    private bool speedBoost = false;
     public PlayerFear PF;
+
 
 
     Rigidbody2D rb;
@@ -33,10 +38,31 @@ public class PlayerInput : MonoBehaviour
             PF.TakeDamage(5 * Time.deltaTime);
             }
         }
+
+  
     }
+
+    private IEnumerator Cooldown(float time)
+    {
+        speedBoost = true;
+        yield return new WaitForSeconds(time);
+        speedBoost = false;
+    }
+
     private void FixedUpdate()
     {
+        if(speedBoost)
+        {
+            Debug.Log("SPEED BOOST!");
+        rb.linearVelocity = new Vector2(moveInput * (Speed * 2f), rb.linearVelocityY);
+        StartCoroutine(Cooldown(1f));
+        }
+        else
+        {
+        Debug.Log("SpeedBoost end!");
+
         rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
+        }
     }
 
     public void OnMove(InputValue value)
@@ -60,6 +86,14 @@ public class PlayerInput : MonoBehaviour
         if(col.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+          if(col.gameObject.CompareTag("Spike"))
+        {
+            PF.TakeDamage(5);
+        }
+        if(col.gameObject.CompareTag("Slope"))
+        {
+            speedBoost = true;
         }
     }
     

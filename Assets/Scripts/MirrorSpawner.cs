@@ -7,7 +7,7 @@ public class MirrorSpawner : MonoBehaviour
     public Transform Mirror;
     public bool AutoSpawn;
     public float FireRate = 3f;
-    public float NextSpawn = 0f;
+    private float NextSpawn = 0f;
     public bool PlayerSpawn;
     public float secondsAfterSpawn = 2f;  
     public int secondsToDestroy = 3;
