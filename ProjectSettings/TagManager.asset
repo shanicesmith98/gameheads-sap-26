@@ -8,6 +8,9 @@ TagManager:
   - Projectile
   - Ground
   - EndPlatform
+  - Spike
+  - Slope
+  - Future
   layers:
   - Default
   - TransparentFX

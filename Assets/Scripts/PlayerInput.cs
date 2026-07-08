@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class PlayerInput : MonoBehaviour
 {
@@ -7,7 +10,9 @@ public class PlayerInput : MonoBehaviour
     public float jumpHeight = 5f;
     private bool isGrounded;
     private bool touchingLight;
+    private bool speedBoost = false;
     public PlayerFear PF;
+
 
 
     Rigidbody2D rb;
@@ -26,29 +31,51 @@ public class PlayerInput : MonoBehaviour
         {
             if(touchingLight)
             {
-            PF.TakeDamage(-5);
+            PF.TakeDamage(-5 * Time.deltaTime);
             }
             else
             {
-            PF.TakeDamage(5);
+            PF.TakeDamage(5 * Time.deltaTime);
             }
         }
+
+  
     }
+
+    private IEnumerator Cooldown(float time)
+    {
+        speedBoost = true;
+        yield return new WaitForSeconds(time);
+        speedBoost = false;
+    }
+
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
+        if(!PF.isGameOver)
+        {
+            if(speedBoost)
+            {
+            Debug.Log("SPEED BOOST!");
+            rb.linearVelocity = new Vector2(moveInput * (Speed * 2f), rb.linearVelocityY);
+            StartCoroutine(Cooldown(1f));
+            }
+            else
+            {
+            rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
+            }
+        }
     }
 
     public void OnMove(InputValue value)
     {        
-        Debug.Log($"ur ass better be moving on god bro: {moveInput}");
+        Debug.Log($"MoveInput: {moveInput}");
 
         moveInput = value.Get<Vector2>().x;
     }
 
     public void OnJump(InputValue value)
     {
-        if(value.isPressed && isGrounded)
+        if(value.isPressed && isGrounded && !PF.isGameOver)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
             isGrounded = false;
@@ -60,6 +87,19 @@ public class PlayerInput : MonoBehaviour
         if(col.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+          if(col.gameObject.CompareTag("Spike"))
+        {
+            PF.TakeDamage(5);
+            isGrounded = true;
+        }
+        if(col.gameObject.CompareTag("Slope"))
+        {
+            speedBoost = true;
+        }
+        if(col.gameObject.CompareTag("Future"))
+        {
+            PF.GameOver();
         }
     }
     
@@ -76,7 +116,7 @@ public class PlayerInput : MonoBehaviour
         if(oth.CompareTag("Light"))
         {
             Debug.Log("Is NOT touching light");
-            touchingLight = true;
+            touchingLight = false;
         }
     }
 
