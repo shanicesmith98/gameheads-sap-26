@@ -10,6 +10,7 @@ TagManager:
   - EndPlatform
   - Spike
   - Slope
+  - Future
   layers:
   - Default
   - TransparentFX
