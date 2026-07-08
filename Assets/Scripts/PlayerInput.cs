@@ -51,30 +51,31 @@ public class PlayerInput : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(speedBoost)
+        if(!PF.isGameOver)
         {
+            if(speedBoost)
+            {
             Debug.Log("SPEED BOOST!");
-        rb.linearVelocity = new Vector2(moveInput * (Speed * 2f), rb.linearVelocityY);
-        StartCoroutine(Cooldown(1f));
-        }
-        else
-        {
-        Debug.Log("SpeedBoost end!");
-
-        rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
+            rb.linearVelocity = new Vector2(moveInput * (Speed * 2f), rb.linearVelocityY);
+            StartCoroutine(Cooldown(1f));
+            }
+            else
+            {
+            rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
+            }
         }
     }
 
     public void OnMove(InputValue value)
     {        
-        Debug.Log($"ur ass better be moving on god bro: {moveInput}");
+        Debug.Log($"MoveInput: {moveInput}");
 
         moveInput = value.Get<Vector2>().x;
     }
 
     public void OnJump(InputValue value)
     {
-        if(value.isPressed && isGrounded)
+        if(value.isPressed && isGrounded && !PF.isGameOver)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
             isGrounded = false;
@@ -90,10 +91,15 @@ public class PlayerInput : MonoBehaviour
           if(col.gameObject.CompareTag("Spike"))
         {
             PF.TakeDamage(5);
+            isGrounded = true;
         }
         if(col.gameObject.CompareTag("Slope"))
         {
             speedBoost = true;
+        }
+        if(col.gameObject.CompareTag("Future"))
+        {
+            PF.GameOver();
         }
     }
     
