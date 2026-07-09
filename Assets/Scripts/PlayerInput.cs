@@ -11,6 +11,12 @@ public class PlayerInput : MonoBehaviour
     private bool isGrounded;
     private bool touchingLight;
     private bool speedBoost = false;
+    public float Speedboost = 1.5f;
+    public bool canCrouch = false;
+    public bool canRunFaster = false;
+    public float addedSpeed = 2f;
+    public bool zeroGravity = false;
+    public float timesJump = 0.4f;
     public PlayerFear PF;
 
 
@@ -38,8 +44,6 @@ public class PlayerInput : MonoBehaviour
             PF.TakeDamage(5 * Time.deltaTime);
             }
         }
-
-  
     }
 
     private IEnumerator Cooldown(float time)
@@ -53,16 +57,33 @@ public class PlayerInput : MonoBehaviour
     {
         if(!PF.isGameOver)
         {
-            if(speedBoost)
-            {
-            Debug.Log("SPEED BOOST!");
-            rb.linearVelocity = new Vector2(moveInput * (Speed * 2f), rb.linearVelocityY);
-            StartCoroutine(Cooldown(1f));
-            }
-            else
-            {
-            rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
-            }
+             if(canRunFaster)
+                {
+                    if(speedBoost)
+                    {
+                        Debug.Log("SPEED BOOST!");
+                        rb.linearVelocity = new Vector2(moveInput * (Speed + addedSpeed * Speedboost), rb.linearVelocityY);
+                        StartCoroutine(Cooldown(1f));
+                    }
+                    else
+                    {
+                        rb.linearVelocity = new Vector2(moveInput * (Speed + addedSpeed), rb.linearVelocityY);
+                    }
+                }
+                else
+                {
+                    if(speedBoost)
+                    {
+                        Debug.Log("SPEED BOOST!");
+                        rb.linearVelocity = new Vector2(moveInput * (Speed * Speedboost), rb.linearVelocityY);
+                        StartCoroutine(Cooldown(1f));
+                    }
+                    else
+                    {
+                        rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
+                    }
+                }
+            
         }
     }
 
@@ -77,7 +98,14 @@ public class PlayerInput : MonoBehaviour
     {
         if(value.isPressed && isGrounded && !PF.isGameOver)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
+             if(zeroGravity)
+                {
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight * timesJump);
+                }
+                else
+                {
+                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
+                }
             isGrounded = false;
         }
     }
