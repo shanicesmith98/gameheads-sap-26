@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerFear : MonoBehaviour //GameManager (I'm scared to rename the script)
 {
+    public int levelsCompleted;
     public bool DarkLevel = true;
     public float maxFear = 100f;
     public float currentFear;
