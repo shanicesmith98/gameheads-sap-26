@@ -24,13 +24,5 @@ public class ProjectileMovement : MonoBehaviour
         transform.Translate(Vector2.right * Speed * Time.deltaTime);
     }
 
-    void OnCollisionEnter2D(Collision2D oth)
-    {
-        if(oth.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-            PF.TakeDamage(damageGiven);
-        }
-    }
 
 }
