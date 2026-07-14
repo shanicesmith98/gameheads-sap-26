@@ -5,16 +5,13 @@ public class ProjectileMovement : MonoBehaviour
     public float Speed = 3f;
     public bool FlipDirection;
     public float damageGiven = 5f;
-    public PlayerFear PF;
     public MirrorSpawner MS;
 
 
     
     void Start()
     {
-        PF = FindFirstObjectByType<PlayerFear>();
         MS = FindFirstObjectByType<MirrorSpawner>();
-
     }
    
     void Update()

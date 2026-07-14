@@ -9,7 +9,6 @@ public class PlayerInput : MonoBehaviour
     public float Speed = 5f;
     public float jumpHeight = 5f;
     private bool isGrounded;
-    private bool touchingLight;
     private bool speedBoost = false;
     public float Speedboost = 1.5f;
     public bool canCrouch = false;
@@ -17,7 +16,9 @@ public class PlayerInput : MonoBehaviour
     public float addedSpeed = 2f;
     public bool zeroGravity = false;
     public float timesJump = 0.4f;
-    public PlayerFear PF;
+    private PlayerFear PF;
+    private GameManager GM;
+
 
 
 
@@ -27,23 +28,15 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        GM = FindFirstObjectByType<GameManager>();
         PF = FindFirstObjectByType<PlayerFear>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(PF.DarkLevel)
-        {
-            if(touchingLight)
-            {
-            PF.TakeDamage(-5 * Time.deltaTime);
-            }
-            else
-            {
-            PF.TakeDamage(5 * Time.deltaTime);
-            }
-        }
+    
     }
 
     private IEnumerator Cooldown(float time)
@@ -55,7 +48,7 @@ public class PlayerInput : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!PF.isGameOver)
+        if(!GM.isGameOver)
         {
              if(canRunFaster)
                 {
@@ -96,7 +89,7 @@ public class PlayerInput : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        if(value.isPressed && isGrounded && !PF.isGameOver)
+        if(value.isPressed && isGrounded && !GM.isGameOver)
         {
              if(zeroGravity)
                 {
@@ -127,20 +120,20 @@ public class PlayerInput : MonoBehaviour
         }
         if(col.gameObject.CompareTag("Future"))
         {
-            PF.GameOver();
+            GM.GameOver();
         }
     }
     
     void OnTriggerEnter2D(Collider2D oth)
     {
+         if(oth.CompareTag("Projectile"))
+        {
+            PF.TakeDamage(5);
+        }
         if(oth.CompareTag("Light"))
         {
             Debug.Log("Is touching light");
-            touchingLight = true;
-        }
-        if(oth.CompareTag("Projectile"))
-        {
-            PF.TakeDamage(5);
+            PF.TouchingLight = true;
         }
     }
        void OnTriggerExit2D(Collider2D oth)
@@ -148,7 +141,7 @@ public class PlayerInput : MonoBehaviour
         if(oth.CompareTag("Light"))
         {
             Debug.Log("Is NOT touching light");
-            touchingLight = false;
+            PF.TouchingLight = false;
         }
     }
 
