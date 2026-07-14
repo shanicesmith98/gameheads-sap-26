@@ -138,6 +138,10 @@ public class PlayerInput : MonoBehaviour
             Debug.Log("Is touching light");
             touchingLight = true;
         }
+        if(oth.CompareTag("Projectile"))
+        {
+            PF.TakeDamage(5);
+        }
     }
        void OnTriggerExit2D(Collider2D oth)
     {
