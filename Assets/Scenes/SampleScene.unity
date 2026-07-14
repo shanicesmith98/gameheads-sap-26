@@ -596,7 +596,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2460986058070897549, guid: 4663db92524134f13982608f81571a5a, type: 3}
       propertyPath: m_Name
-      value: Mirror
+      value: Mirror(Spawner)
       objectReference: {fileID: 0}
     - target: {fileID: 4696256185549755694, guid: 4663db92524134f13982608f81571a5a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -637,6 +637,10 @@ PrefabInstance:
     - target: {fileID: 4696256185549755694, guid: 4663db92524134f13982608f81571a5a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5584185555529818465, guid: 4663db92524134f13982608f81571a5a, type: 3}
+      propertyPath: AutoSpawn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5584185555529818465, guid: 4663db92524134f13982608f81571a5a, type: 3}
       propertyPath: PlayerSpawn
@@ -811,6 +815,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
   Speed: 5
   jumpHeight: 10
+  Speedboost: 1.5
+  canCrouch: 0
+  canRunFaster: 0
+  addedSpeed: 2
+  zeroGravity: 0
+  timesJump: 1.5
   PF: {fileID: 0}
 --- !u!50 &249882927
 Rigidbody2D:
@@ -1405,7 +1415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0995a3c351f914282b7847a548c964e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFear
-  DarkLevel: 1
+  levelsCompleted: 0
+  DarkLevel: 0
   maxFear: 100
   currentFear: 0
   isGameOver: 0
