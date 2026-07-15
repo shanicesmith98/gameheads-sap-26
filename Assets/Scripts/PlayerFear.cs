@@ -6,25 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class PlayerFear : MonoBehaviour //GameManager (I'm scared to rename the script)
 {
+
     public int levelsCompleted;
-    public bool DarkLevel = true;
+    public bool AutoDeplete = true;
     public float maxFear = 100f;
     public float currentFear;
-    public bool isGameOver = false;
-    public float timeRemaining = 300; //5 min
-    public bool timerOn = false;
+    public bool TouchingLight;
 
 
     public Slider FearSlider;
-    public TMP_Text Timer;
-    public TMP_Text GameOverText;
+
+    private GameManager GM;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentFear = 0;
         UpdateFearUI();
-        GameOverText.gameObject.SetActive(false);
+        GM = FindFirstObjectByType<GameManager>();
+
     }
 
     public void TakeDamage(float damage)
@@ -42,49 +43,22 @@ public class PlayerFear : MonoBehaviour //GameManager (I'm scared to rename the 
         }
     }
 
-    public void GameOver()
-    {
-        Debug.Log("GameOver!");
-        isGameOver = true;
-        GameOverText.gameObject.SetActive(true);
-        GameOverText.text = "GAME OVER!";
-        Invoke("LoadSceneAgain", 1f);
-    }   
-
-    void LoadSceneAgain()
-    {
-        SceneManager.LoadScene(0);
-    } 
-
-      void DisplayTime(float timeToDisplay)
-    {
-        timeToDisplay += 1;
-
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60); 
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-
-        Timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    }
-
     void Update()
     {
         if(currentFear == maxFear)
         {
-            GameOver();
+            GM.GameOver();
         }
-         if (timerOn)
+
+        if(AutoDeplete)
         {
-            if (timeRemaining > 0)
+            if(TouchingLight)
             {
-                timeRemaining -= Time.deltaTime;
-                DisplayTime(timeRemaining);
+            TakeDamage(-5 * Time.deltaTime);
             }
             else
             {
-                Debug.Log("Time has run out!");
-                timeRemaining = 0;
-                timerOn = false;
-                GameOver();
+            TakeDamage(5 * Time.deltaTime);
             }
         }
     }
