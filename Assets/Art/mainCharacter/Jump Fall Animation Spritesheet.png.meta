@@ -1,67 +1,34 @@
 fileFormatVersion: 2
-guid: 53cf2c9e28f46fc41ba72cd6bc99fba1
+guid: 7a3878988bdf0c445b7cbdf9d597cd98
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4831997116911646024
-    second: sprite_sheet (1)_0
+      213: -6234573654306396563
+    second: Jump Fall Animation Spritesheet_0
   - first:
-      213: -5236798376896308232
-    second: sprite_sheet (1)_1
+      213: 7684139000913201772
+    second: Jump Fall Animation Spritesheet_1
   - first:
-      213: 941011508473296331
-    second: sprite_sheet (1)_2
+      213: -105473628032379256
+    second: Jump Fall Animation Spritesheet_2
   - first:
-      213: -3456209596567313718
-    second: sprite_sheet (1)_3
+      213: 4770600572085159254
+    second: Jump Fall Animation Spritesheet_3
   - first:
-      213: -2314676943549235514
-    second: sprite_sheet (1)_4
+      213: -7916760245516109477
+    second: Jump Fall Animation Spritesheet_4
   - first:
-      213: 5034127026241225188
-    second: sprite_sheet (1)_5
+      213: -7487322222414613212
+    second: Jump Fall Animation Spritesheet_5
   - first:
-      213: 5486026363670121458
-    second: sprite_sheet (1)_6
+      213: -4752160504493812341
+    second: Jump Fall Animation Spritesheet_6
   - first:
-      213: -5679704251215048136
-    second: sprite_sheet (1)_7
+      213: -8835278506154254912
+    second: Jump Fall Animation Spritesheet_7
   - first:
-      213: 1996124730058843620
-    second: sprite_sheet (1)_8
-  - first:
-      213: -3791742161099827918
-    second: sprite_sheet (1)_9
-  - first:
-      213: -7432929446985630219
-    second: sprite_sheet (1)_10
-  - first:
-      213: -7511406836973135377
-    second: sprite_sheet (1)_11
-  - first:
-      213: 9143031586861540744
-    second: sprite_sheet (1)_12
-  - first:
-      213: -1503397610429169890
-    second: sprite_sheet (1)_13
-  - first:
-      213: 515700070179063291
-    second: sprite_sheet (1)_14
-  - first:
-      213: -5443004691848045284
-    second: sprite_sheet (1)_15
-  - first:
-      213: -9067599481587073648
-    second: sprite_sheet (1)_16
-  - first:
-      213: 6968367255941510095
-    second: sprite_sheet (1)_17
-  - first:
-      213: -8060072333652333606
-    second: sprite_sheet (1)_18
-  - first:
-      213: 6855155409462428824
-    second: sprite_sheet (1)_19
+      213: -7476878833520216140
+    second: Jump Fall Animation Spritesheet_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -157,177 +124,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_0
+      name: Jump Fall Animation Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 553
-        width: 202
-        height: 424
+        x: 194
+        y: 574
+        width: 168
+        height: 408
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c380467b950e4a24d87047e547f54db6
-      internalID: -1083061544
+      spriteID: d66ee092b485a79a0800000000000000
+      internalID: -6234573654306396563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_1
+      name: Jump Fall Animation Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 649
-        y: 551
-        width: 230
-        height: 405
+        x: 705
+        y: 573
+        width: 178
+        height: 393
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3ea3936b49d35244188ce747931859dc
-      internalID: 2057678279
+      spriteID: c6a082285bb83aa60800000000000000
+      internalID: 7684139000913201772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_2
+      name: Jump Fall Animation Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1232
-        y: 553
-        width: 162
-        height: 416
+        x: 1203
+        y: 550
+        width: 171
+        height: 367
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5a9b44b36417f814ebdc8ce7ec4113df
-      internalID: -931813937
+      spriteID: 88655fb4b48498ef0800000000000000
+      internalID: -105473628032379256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_3
+      name: Jump Fall Animation Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1695
-        y: 566
-        width: 224
-        height: 397
+        x: 179
+        y: 38
+        width: 171
+        height: 355
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 205e34ce71306fa44aee361d5e67e5b4
-      internalID: 1066938700
+      spriteID: 6554960d1f3943240800000000000000
+      internalID: 4770600572085159254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_4
+      name: Jump Fall Animation Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 154
-        y: 64
-        width: 206
-        height: 376
+        x: 678
+        y: 41
+        width: 183
+        height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 88ee905d8dcd49b4cadc1193f5289604
-      internalID: -1431363981
+      spriteID: b59f3126084022290800000000000000
+      internalID: -7916760245516109477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_5
+      name: Jump Fall Animation Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 687
-        y: 49
-        width: 199
-        height: 387
+        x: 1190
+        y: 41
+        width: 183
+        height: 337
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5da4f9d3a61b6144faceaf77c3e7a283
-      internalID: 2066646188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 1255
-        y: 47
-        width: 145
-        height: 389
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 293b52eb918a5d840ab160effecd2892
-      internalID: -991911964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 1728
-        y: 59
-        width: 198
-        height: 414
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f67dfdd51941384d8ad4342fa3dfedf
-      internalID: -1494242656
+      spriteID: 425b616bb10b71890800000000000000
+      internalID: -7487322222414613212
       vertices: []
       indices: 
       edges: []
@@ -336,7 +259,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ea96ced39f0c36b4f945c887affe6f0c
+    spriteID: a1823ac638810044dba502200432dfc0
     internalID: 0
     vertices: []
     indices: 
@@ -346,16 +269,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":2.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MC_Walk_SpriteSheet_0: -1083061544
-      MC_Walk_SpriteSheet_1: 2057678279
-      MC_Walk_SpriteSheet_2: -931813937
-      MC_Walk_SpriteSheet_3: 1066938700
-      MC_Walk_SpriteSheet_4: -1431363981
-      MC_Walk_SpriteSheet_5: 2066646188
-      MC_Walk_SpriteSheet_6: -991911964
-      MC_Walk_SpriteSheet_7: -1494242656
+      Jump Fall Animation Spritesheet_0: -6234573654306396563
+      Jump Fall Animation Spritesheet_1: 7684139000913201772
+      Jump Fall Animation Spritesheet_2: -105473628032379256
+      Jump Fall Animation Spritesheet_3: 4770600572085159254
+      Jump Fall Animation Spritesheet_4: -7916760245516109477
+      Jump Fall Animation Spritesheet_5: -7487322222414613212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

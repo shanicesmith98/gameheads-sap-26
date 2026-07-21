@@ -148,10 +148,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 532
-        width: 532
-        height: 532
+        x: 66
+        y: 579
+        width: 341
+        height: 409
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 532
-        y: 532
-        width: 532
-        height: 532
+        x: 642
+        y: 577
+        width: 250
+        height: 403
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 532
-        width: 532
-        height: 532
+        x: 1229
+        y: 576
+        width: 157
+        height: 403
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 1596
-        y: 532
-        width: 532
-        height: 532
+        x: 1753
+        y: 578
+        width: 166
+        height: 404
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 2128
-        y: 532
-        width: 532
-        height: 532
+        x: 2219
+        y: 587
+        width: 241
+        height: 421
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 2660
-        y: 532
-        width: 532
-        height: 532
+        x: 2741
+        y: 618
+        width: 276
+        height: 372
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 532
-        height: 532
+        x: 65
+        y: 51
+        width: 308
+        height: 406
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 532
-        y: 0
-        width: 532
-        height: 532
+        x: 629
+        y: 51
+        width: 233
+        height: 389
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 0
-        width: 532
-        height: 532
+        x: 1224
+        y: 48
+        width: 160
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 1596
-        y: 0
-        width: 532
-        height: 532
+        x: 1696
+        y: 54
+        width: 237
+        height: 413
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: MC_Run_SpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 2128
-        y: 0
-        width: 532
-        height: 532
+        x: 2247
+        y: 82
+        width: 244
+        height: 374
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
