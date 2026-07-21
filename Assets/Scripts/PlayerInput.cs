@@ -9,16 +9,9 @@ public class PlayerInput : MonoBehaviour
     public float Speed = 5f;
     public float jumpHeight = 5f;
     private bool isGrounded;
+    private bool touchingLight;
     private bool speedBoost = false;
-    public float Speedboost = 1.5f;
-    public bool canCrouch = false;
-    public bool canRunFaster = false;
-    public float addedSpeed = 2f;
-    public bool zeroGravity = false;
-    public float timesJump = 0.4f;
-    private PlayerFear PF;
-    private GameManager GM;
-
+    public PlayerFear PF;
 
 
 
@@ -28,15 +21,25 @@ public class PlayerInput : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        GM = FindFirstObjectByType<GameManager>();
         PF = FindFirstObjectByType<PlayerFear>();
-
     }
 
     // Update is called once per frame
     void Update()
     {
-    
+        if(PF.DarkLevel)
+        {
+            if(touchingLight)
+            {
+            PF.TakeDamage(-5 * Time.deltaTime);
+            }
+            else
+            {
+            PF.TakeDamage(5 * Time.deltaTime);
+            }
+        }
+
+  
     }
 
     private IEnumerator Cooldown(float time)
@@ -48,35 +51,18 @@ public class PlayerInput : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!GM.isGameOver)
+        if(!PF.isGameOver)
         {
-             if(canRunFaster)
-                {
-                    if(speedBoost)
-                    {
-                        Debug.Log("SPEED BOOST!");
-                        rb.linearVelocity = new Vector2(moveInput * (Speed + addedSpeed * Speedboost), rb.linearVelocityY);
-                        StartCoroutine(Cooldown(1f));
-                    }
-                    else
-                    {
-                        rb.linearVelocity = new Vector2(moveInput * (Speed + addedSpeed), rb.linearVelocityY);
-                    }
-                }
-                else
-                {
-                    if(speedBoost)
-                    {
-                        Debug.Log("SPEED BOOST!");
-                        rb.linearVelocity = new Vector2(moveInput * (Speed * Speedboost), rb.linearVelocityY);
-                        StartCoroutine(Cooldown(1f));
-                    }
-                    else
-                    {
-                        rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
-                    }
-                }
-            
+            if(speedBoost)
+            {
+            Debug.Log("SPEED BOOST!");
+            rb.linearVelocity = new Vector2(moveInput * (Speed * 2f), rb.linearVelocityY);
+            StartCoroutine(Cooldown(1f));
+            }
+            else
+            {
+            rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
+            }
         }
     }
 
@@ -89,16 +75,9 @@ public class PlayerInput : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        if(value.isPressed && isGrounded && !GM.isGameOver)
+        if(value.isPressed && isGrounded && !PF.isGameOver)
         {
-             if(zeroGravity)
-                {
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight * timesJump);
-                }
-                else
-                {
-                rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
-                }
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
             isGrounded = false;
         }
     }
@@ -120,20 +99,20 @@ public class PlayerInput : MonoBehaviour
         }
         if(col.gameObject.CompareTag("Future"))
         {
-            GM.GameOver();
+            PF.GameOver();
         }
     }
     
     void OnTriggerEnter2D(Collider2D oth)
     {
-         if(oth.CompareTag("Projectile"))
-        {
-            PF.TakeDamage(5);
-        }
         if(oth.CompareTag("Light"))
         {
             Debug.Log("Is touching light");
-            PF.TouchingLight = true;
+            touchingLight = true;
+        }
+        if(oth.CompareTag("Projectile"))
+        {
+            PF.TakeDamage(5);
         }
     }
        void OnTriggerExit2D(Collider2D oth)
@@ -141,7 +120,7 @@ public class PlayerInput : MonoBehaviour
         if(oth.CompareTag("Light"))
         {
             Debug.Log("Is NOT touching light");
-            PF.TouchingLight = false;
+            touchingLight = false;
         }
     }
 

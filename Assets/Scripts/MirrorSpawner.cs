@@ -9,8 +9,8 @@ public class MirrorSpawner : MonoBehaviour
     public float FireRate = 3f;
     private float NextSpawn = 0f;
     public bool PlayerSpawn;
-    public float spawnDelay = 2f;  
-    public int projectileLifespan = 3;
+    public float secondsAfterSpawn = 2f;  
+    public int secondsToDestroy = 3;
     void Start()
     {
         clone = GetComponent<GameObject>();
@@ -31,13 +31,16 @@ public class MirrorSpawner : MonoBehaviour
                 NextSpawn = Time.time + FireRate;
                 Invoke("LaunchProjectile", 0);
             }
+            Destroy(clone,secondsToDestroy);
         }
         
         //SPAWNS AFTER PLAYER WALKS PAST (WITH A DELAY!!)
         if(PlayerSpawn && !AutoSpawn) //Spawns once the player touches the mirror
         {
-            Invoke("LaunchProjectile", spawnDelay);
             PlayerSpawn = false;
+            Invoke("LaunchProjectile", secondsAfterSpawn);
+            Destroy(clone,secondsToDestroy);
+
         }
     }
 

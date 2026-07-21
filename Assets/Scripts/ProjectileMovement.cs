@@ -5,13 +5,12 @@ public class ProjectileMovement : MonoBehaviour
     public float Speed = 3f;
     public bool FlipDirection;
     public float damageGiven = 5f;
-    public MirrorSpawner MS;
-
+    public PlayerFear PF;
 
     
     void Start()
     {
-        MS = FindFirstObjectByType<MirrorSpawner>();
+        PF = FindFirstObjectByType<PlayerFear>();
     }
    
     void Update()
@@ -23,8 +22,6 @@ public class ProjectileMovement : MonoBehaviour
         }
 
         transform.Translate(Vector2.right * Speed * Time.deltaTime);
-        Destroy(MS.clone,MS.projectileLifespan);
-
     }
 
 

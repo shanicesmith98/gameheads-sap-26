@@ -1,67 +1,28 @@
 fileFormatVersion: 2
-guid: 53cf2c9e28f46fc41ba72cd6bc99fba1
+guid: b3ac67eee8e1435408876d87cfc66dae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4831997116911646024
-    second: sprite_sheet (1)_0
+      213: -4929544195628482040
+    second: Jump Up Animation Spritesheet_0
   - first:
-      213: -5236798376896308232
-    second: sprite_sheet (1)_1
+      213: 8235022172469326406
+    second: Jump Up Animation Spritesheet_1
   - first:
-      213: 941011508473296331
-    second: sprite_sheet (1)_2
+      213: 7405280807290810149
+    second: Jump Up Animation Spritesheet_2
   - first:
-      213: -3456209596567313718
-    second: sprite_sheet (1)_3
+      213: 6583142685745099774
+    second: Jump Up Animation Spritesheet_3
   - first:
-      213: -2314676943549235514
-    second: sprite_sheet (1)_4
+      213: 7090643662601374962
+    second: Jump Up Animation Spritesheet_4
   - first:
-      213: 5034127026241225188
-    second: sprite_sheet (1)_5
+      213: 6932515733068268932
+    second: Jump Up Animation Spritesheet_5
   - first:
-      213: 5486026363670121458
-    second: sprite_sheet (1)_6
-  - first:
-      213: -5679704251215048136
-    second: sprite_sheet (1)_7
-  - first:
-      213: 1996124730058843620
-    second: sprite_sheet (1)_8
-  - first:
-      213: -3791742161099827918
-    second: sprite_sheet (1)_9
-  - first:
-      213: -7432929446985630219
-    second: sprite_sheet (1)_10
-  - first:
-      213: -7511406836973135377
-    second: sprite_sheet (1)_11
-  - first:
-      213: 9143031586861540744
-    second: sprite_sheet (1)_12
-  - first:
-      213: -1503397610429169890
-    second: sprite_sheet (1)_13
-  - first:
-      213: 515700070179063291
-    second: sprite_sheet (1)_14
-  - first:
-      213: -5443004691848045284
-    second: sprite_sheet (1)_15
-  - first:
-      213: -9067599481587073648
-    second: sprite_sheet (1)_16
-  - first:
-      213: 6968367255941510095
-    second: sprite_sheet (1)_17
-  - first:
-      213: -8060072333652333606
-    second: sprite_sheet (1)_18
-  - first:
-      213: 6855155409462428824
-    second: sprite_sheet (1)_19
+      213: 2236770900865035258
+    second: Jump Up Animation Spritesheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -157,56 +118,122 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_0
+      name: Jump Up Animation Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 553
-        width: 202
-        height: 424
+        x: 117
+        y: 559
+        width: 198
+        height: 396
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c380467b950e4a24d87047e547f54db6
-      internalID: -1083061544
+      spriteID: 802c9f20cadb69bb0800000000000000
+      internalID: -4929544195628482040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_1
+      name: Jump Up Animation Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 649
-        y: 551
-        width: 230
-        height: 405
+        x: 677
+        y: 554
+        width: 155
+        height: 344
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3ea3936b49d35244188ce747931859dc
-      internalID: 2057678279
+      spriteID: 642ff7be80da84270800000000000000
+      internalID: 8235022172469326406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_2
+      name: Jump Up Animation Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1232
-        y: 553
-        width: 162
+        x: 1189
+        y: 554
+        width: 155
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f269cc8a7d4c660800000000000000
+      internalID: 7405280807290810149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Up Animation Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 554
+        width: 155
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef33c89c4650c5b50800000000000000
+      internalID: 6583142685745099774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Up Animation Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 46
+        width: 161
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcca32e7d6076260800000000000000
+      internalID: 7090643662601374962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Up Animation Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 43
+        width: 169
         height: 416
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -214,120 +241,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5a9b44b36417f814ebdc8ce7ec4113df
-      internalID: -931813937
+      spriteID: 4854755445e353060800000000000000
+      internalID: 6932515733068268932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_3
+      name: Jump Up Animation Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 1695
-        y: 566
-        width: 224
-        height: 397
+        x: 1222
+        y: 74
+        width: 176
+        height: 392
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 205e34ce71306fa44aee361d5e67e5b4
-      internalID: 1066938700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 64
-        width: 206
-        height: 376
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88ee905d8dcd49b4cadc1193f5289604
-      internalID: -1431363981
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 687
-        y: 49
-        width: 199
-        height: 387
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5da4f9d3a61b6144faceaf77c3e7a283
-      internalID: 2066646188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 1255
-        y: 47
-        width: 145
-        height: 389
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 293b52eb918a5d840ab160effecd2892
-      internalID: -991911964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MC_Walk_SpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 1728
-        y: 59
-        width: 198
-        height: 414
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f67dfdd51941384d8ad4342fa3dfedf
-      internalID: -1494242656
+      spriteID: afbadfd884b9a0f10800000000000000
+      internalID: 2236770900865035258
       vertices: []
       indices: 
       edges: []
@@ -336,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ea96ced39f0c36b4f945c887affe6f0c
+    spriteID: c2cc71d3fb691084a8af95e9a77b06d6
     internalID: 0
     vertices: []
     indices: 
@@ -348,14 +287,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":2.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MC_Walk_SpriteSheet_0: -1083061544
-      MC_Walk_SpriteSheet_1: 2057678279
-      MC_Walk_SpriteSheet_2: -931813937
-      MC_Walk_SpriteSheet_3: 1066938700
-      MC_Walk_SpriteSheet_4: -1431363981
-      MC_Walk_SpriteSheet_5: 2066646188
-      MC_Walk_SpriteSheet_6: -991911964
-      MC_Walk_SpriteSheet_7: -1494242656
+      Jump Up Animation Spritesheet_0: -4929544195628482040
+      Jump Up Animation Spritesheet_1: 8235022172469326406
+      Jump Up Animation Spritesheet_2: 7405280807290810149
+      Jump Up Animation Spritesheet_3: 6583142685745099774
+      Jump Up Animation Spritesheet_4: 7090643662601374962
+      Jump Up Animation Spritesheet_5: 6932515733068268932
+      Jump Up Animation Spritesheet_6: 2236770900865035258
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

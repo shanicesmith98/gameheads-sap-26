@@ -1,0 +1,471 @@
+fileFormatVersion: 2
+guid: 0482aa2edd4313b4f8e5a405ffbb539d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4474788320572932643
+    second: Run Animation Polished Spritesheet_0
+  - first:
+      213: -5614406862309826638
+    second: Run Animation Polished Spritesheet_1
+  - first:
+      213: 361935879880340250
+    second: Run Animation Polished Spritesheet_2
+  - first:
+      213: 4658624338774969874
+    second: Run Animation Polished Spritesheet_3
+  - first:
+      213: -1851054051292317196
+    second: Run Animation Polished Spritesheet_4
+  - first:
+      213: -7419535140103886150
+    second: Run Animation Polished Spritesheet_5
+  - first:
+      213: -4214124900011747699
+    second: Run Animation Polished Spritesheet_6
+  - first:
+      213: -3589219664754588056
+    second: Run Animation Polished Spritesheet_7
+  - first:
+      213: -5193342352517324040
+    second: Run Animation Polished Spritesheet_8
+  - first:
+      213: 2786227442035675932
+    second: Run Animation Polished Spritesheet_9
+  - first:
+      213: -222130659458448233
+    second: Run Animation Polished Spritesheet_10
+  - first:
+      213: 7365312128007081277
+    second: Run Animation Polished Spritesheet_11
+  - first:
+      213: 1350190955501427790
+    second: Run Animation Polished Spritesheet_12
+  - first:
+      213: -8303205014955039106
+    second: Run Animation Polished Spritesheet_13
+  - first:
+      213: 6890039377456130865
+    second: Run Animation Polished Spritesheet_14
+  - first:
+      213: -248889942563228840
+    second: Run Animation Polished Spritesheet_15
+  - first:
+      213: -30090499339620619
+    second: Run Animation Polished Spritesheet_16
+  - first:
+      213: -8655630070589743291
+    second: Run Animation Polished Spritesheet_17
+  - first:
+      213: 3466091668815696336
+    second: Run Animation Polished Spritesheet_18
+  - first:
+      213: 3783385995681783084
+    second: Run Animation Polished Spritesheet_19
+  - first:
+      213: -5799510309856100843
+    second: Run Animation Polished Spritesheet_20
+  - first:
+      213: 4337617390550554587
+    second: Run Animation Polished Spritesheet_21
+  - first:
+      213: -5981540433234418014
+    second: Run Animation Polished Spritesheet_22
+  - first:
+      213: 1860840855156672117
+    second: Run Animation Polished Spritesheet_23
+  - first:
+      213: -3466369787894027744
+    second: Run Animation Polished Spritesheet_24
+  - first:
+      213: 7021761994749367599
+    second: Run Animation Polished Spritesheet_25
+  - first:
+      213: -8754558710100397612
+    second: Run Animation Polished Spritesheet_26
+  - first:
+      213: 8634048237635489409
+    second: Run Animation Polished Spritesheet_27
+  - first:
+      213: -2814084127263392827
+    second: Run Animation Polished Spritesheet_28
+  - first:
+      213: -563135419624314398
+    second: Run Animation Polished Spritesheet_29
+  - first:
+      213: -5877130999829506232
+    second: Run Animation Polished Spritesheet_30
+  - first:
+      213: 4651577635406319506
+    second: Run Animation Polished Spritesheet_31
+  - first:
+      213: -2614622776865507110
+    second: Run Animation Polished Spritesheet_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1069
+        width: 286
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32201d4e444a91e30800000000000000
+      internalID: 4474788320572932643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1075
+        width: 236
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfd18384be9512b0800000000000000
+      internalID: -5614406862309826638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1070
+        width: 158
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a137cbfd3cad50500800000000000000
+      internalID: 361935879880340250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1072
+        width: 165
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ecba65722c6a040800000000000000
+      internalID: 4658624338774969874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 561
+        width: 223
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f97cacc52cbf46e0800000000000000
+      internalID: -1851054051292317196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 594
+        width: 266
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba6497b914880990800000000000000
+      internalID: -7419535140103886150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 562
+        width: 284
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86dba71bbb6485c0800000000000000
+      internalID: -4214124900011747699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 553
+        width: 231
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866c47d3bb7803ec0800000000000000
+      internalID: -3589219664754588056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 45
+        width: 168
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2a63955aa8de7b0800000000000000
+      internalID: -5193342352517324040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 48
+        width: 224
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c135bf1b81baaa620800000000000000
+      internalID: 2786227442035675932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run Animation Polished Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 77
+        width: 248
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79481459755daecf0800000000000000
+      internalID: -222130659458448233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1f3e27d3ceb77724bb6c8638196975db
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":3.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Run Animation Polished Spritesheet_0: 4474788320572932643
+      Run Animation Polished Spritesheet_1: -5614406862309826638
+      Run Animation Polished Spritesheet_10: -222130659458448233
+      Run Animation Polished Spritesheet_2: 361935879880340250
+      Run Animation Polished Spritesheet_3: 4658624338774969874
+      Run Animation Polished Spritesheet_4: -1851054051292317196
+      Run Animation Polished Spritesheet_5: -7419535140103886150
+      Run Animation Polished Spritesheet_6: -4214124900011747699
+      Run Animation Polished Spritesheet_7: -3589219664754588056
+      Run Animation Polished Spritesheet_8: -5193342352517324040
+      Run Animation Polished Spritesheet_9: 2786227442035675932
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
