@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 817012496}
   - component: {fileID: 817012495}
   m_Layer: 0
-  m_Name: Closed Sprite Shape
+  m_Name: Slope Metric
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
