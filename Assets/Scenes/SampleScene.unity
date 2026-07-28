@@ -1698,6 +1698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 942941658}
   - component: {fileID: 942941657}
+  - component: {fileID: 942941659}
   m_Layer: 0
   m_Name: ' GameManager(Slider,Text)'
   m_TagString: Untagged
@@ -1720,12 +1721,7 @@ MonoBehaviour:
   DarkLevel: 1
   maxFear: 100
   currentFear: 0
-  isGameOver: 0
-  timeRemaining: 10
-  timerOn: 0
   FearSlider: {fileID: 196599316}
-  Timer: {fileID: 1572275339}
-  GameOverText: {fileID: 8299528}
 --- !u!4 &942941658
 Transform:
   m_ObjectHideFlags: 0
@@ -1741,6 +1737,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &942941659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942941656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98caca13c8d924944bcf0defd0912ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  isGameOver: 0
+  timeRemaining: 300
+  timerOn: 0
+  Timer: {fileID: 1572275339}
+  GameOverText: {fileID: 8299528}
 --- !u!1 &973641244
 GameObject:
   m_ObjectHideFlags: 0
