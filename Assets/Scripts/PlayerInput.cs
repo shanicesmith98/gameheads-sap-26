@@ -12,6 +12,8 @@ public class PlayerInput : MonoBehaviour
     private bool touchingLight;
     private bool speedBoost = false;
     public PlayerFear PF;
+    GameManager GM;
+
 
 
 
@@ -22,6 +24,8 @@ public class PlayerInput : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         PF = FindFirstObjectByType<PlayerFear>();
+        GM = FindFirstObjectByType<GameManager>();
+
     }
 
     // Update is called once per frame
@@ -51,7 +55,7 @@ public class PlayerInput : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!PF.isGameOver)
+        if(!GM.isGameOver)
         {
             if(speedBoost)
             {
@@ -75,7 +79,7 @@ public class PlayerInput : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        if(value.isPressed && isGrounded && !PF.isGameOver)
+        if(value.isPressed && isGrounded && !GM.isGameOver)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
             isGrounded = false;
@@ -99,7 +103,7 @@ public class PlayerInput : MonoBehaviour
         }
         if(col.gameObject.CompareTag("Future"))
         {
-            PF.GameOver();
+            GM.GameOver();
         }
     }
     
