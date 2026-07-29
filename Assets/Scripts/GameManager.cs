@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -37,6 +39,16 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+       void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
+
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60); 
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        Timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
     public void GameOver()
     {
         Debug.Log("GameOver!");
@@ -51,13 +63,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     } 
 
-      void DisplayTime(float timeToDisplay)
-    {
-        timeToDisplay += 1;
-
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60); 
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-
-        Timer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    }
 }
