@@ -10,19 +10,19 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "6368c21d-4115-4e02-8a3d-1a10fc42956e",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Dpad",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
                     "name": "Jump",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "be21d287-e6da-447f-8fbc-3f9032695154",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -83,11 +83,33 @@
                 },
                 {
                     "name": "",
+                    "id": "13571f75-e7f7-4f43-ae09-c83155768229",
+                    "path": "<Gamepad>/dpad",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": ";New Control Scheme1;New Control Scheme",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e140bee4-2abf-4274-b1ba-7a8e162ca0d5",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";New Control Scheme;New Control Scheme1",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "970fef97-d31a-4978-a995-b00014dea97d",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";New Control Scheme;New Control Scheme1",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -95,5 +117,28 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "New Control Scheme",
+            "bindingGroup": "New Control Scheme",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "New Control Scheme1",
+            "bindingGroup": "New Control Scheme1",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }
