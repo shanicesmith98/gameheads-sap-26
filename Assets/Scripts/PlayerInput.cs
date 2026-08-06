@@ -6,25 +6,30 @@ using System.Collections.Generic;
 
 public class PlayerInput : MonoBehaviour
 {
+    private float moveInput;
+
     public float Speed = 5f;
     public float jumpHeight = 5f;
+    public bool isCrouching = false;
+
     private bool isGrounded;
     private bool touchingLight;
     private bool speedBoost = false;
-    public PlayerFear PF;
+
+    PlayerFear PF;
     GameManager GM;
-
-
-
-
+    ManagerScene MS;
+    SpriteRenderer SP;
     Rigidbody2D rb;
-    private float moveInput;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         PF = FindFirstObjectByType<PlayerFear>();
         GM = FindFirstObjectByType<GameManager>();
+        MS = FindFirstObjectByType<ManagerScene>();
+        SP = GetComponent<SpriteRenderer>();
 
     }
 
@@ -86,6 +91,21 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
+    public void OnCrouch(InputValue value)
+    {
+        Debug.Log("Crouching");
+        if(value.isPressed)
+        {
+            SP.color = Color.red;
+            isCrouching = true;
+        }
+        else
+        {
+            SP.color = Color.white;
+            isCrouching = false;
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.CompareTag("Ground"))
@@ -116,7 +136,14 @@ public class PlayerInput : MonoBehaviour
         }
         if(oth.CompareTag("Projectile"))
         {
+            if(!isCrouching)
+            {
             PF.TakeDamage(5);
+            }
+        }
+         if(oth.CompareTag("EndOfLevel"))
+        {
+            MS.EndOfLevel = true;
         }
     }
        void OnTriggerExit2D(Collider2D oth)
