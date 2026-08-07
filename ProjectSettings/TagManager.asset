@@ -11,6 +11,7 @@ TagManager:
   - Spike
   - Slope
   - Future
+  - EndOfLevel
   layers:
   - Default
   - TransparentFX
