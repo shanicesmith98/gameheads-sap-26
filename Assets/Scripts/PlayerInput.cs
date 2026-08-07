@@ -80,6 +80,22 @@ public class PlayerInput : MonoBehaviour
         Debug.Log($"MoveInput: {moveInput}");
 
         moveInput = value.Get<Vector2>().x;
+
+        if(moveInput > 0 )
+        {
+            Debug.Log("Going Left!!");
+            SP.flipX = true;
+
+        }
+         else if(moveInput < 0)
+        {
+            SP.flipX = false;
+            Debug.Log("Going Right!!");
+        }
+        else if(moveInput == 0)
+        {
+            //cue the idle animation woohoo
+        }
     }
 
     public void OnJump(InputValue value)
