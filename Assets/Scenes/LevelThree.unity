@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 221321514}
   - component: {fileID: 221321513}
   m_Layer: 0
-  m_Name: 2nd Slope
+  m_Name: Level 3 Slope
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
