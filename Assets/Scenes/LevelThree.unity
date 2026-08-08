@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0995a3c351f914282b7847a548c964e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFear
-  DarkLevel: 1
+  DarkLevel: 0
   maxFear: 100
   currentFear: 0
   FearSlider: {fileID: 0}
