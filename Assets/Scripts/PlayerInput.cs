@@ -11,6 +11,7 @@ public class PlayerInput : MonoBehaviour
     public float Speed = 5f;
     public float jumpHeight = 5f;
     public bool isCrouching = false;
+    public bool Spawn = false;
 
     private bool isGrounded;
     private bool touchingLight;
@@ -188,6 +189,10 @@ public class PlayerInput : MonoBehaviour
          if(oth.CompareTag("EndOfLevel"))
         {
             MS.EndOfLevel = true;
+        }
+        if(oth.CompareTag("Mirror"))
+        {
+            Spawn = true;
         }
     }
        void OnTriggerExit2D(Collider2D oth)

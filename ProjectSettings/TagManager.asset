@@ -12,6 +12,7 @@ TagManager:
   - Slope
   - Future
   - EndOfLevel
+  - Mirror
   layers:
   - Default
   - TransparentFX
