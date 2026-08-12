@@ -21,6 +21,7 @@ public class PlayerInput : MonoBehaviour
     ManagerScene MS;
     SpriteRenderer SP;
     Rigidbody2D rb;
+    Animator anim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +31,7 @@ public class PlayerInput : MonoBehaviour
         GM = FindFirstObjectByType<GameManager>();
         MS = FindFirstObjectByType<ManagerScene>();
         SP = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
 
     }
 
@@ -66,11 +68,15 @@ public class PlayerInput : MonoBehaviour
             {
             Debug.Log("SPEED BOOST!");
             rb.linearVelocity = new Vector2(moveInput * (Speed * 2f), rb.linearVelocityY);
-            StartCoroutine(Cooldown(1f));
+            }
+            else if(isCrouching)
+            {
+                rb.linearVelocity = new Vector2(moveInput * (Speed*0.5f), rb.linearVelocityY);
             }
             else
             {
             rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
+            anim.SetBool("isRunning",false);
             }
         }
     }
@@ -84,16 +90,24 @@ public class PlayerInput : MonoBehaviour
         if(moveInput > 0 )
         {
             Debug.Log("Going Left!!");
-            SP.flipX = true;
+            SP.flipX = false;
+            anim.SetBool("isWalking",true);
+
 
         }
          else if(moveInput < 0)
         {
-            SP.flipX = false;
+            SP.flipX = true;
             Debug.Log("Going Right!!");
+             anim.SetBool("isWalking",true);
+
         }
         else if(moveInput == 0)
         {
+            anim.SetBool("isWalking",false);
+            anim.SetBool("isRunning",false);
+
+
             //cue the idle animation woohoo
         }
     }
@@ -104,6 +118,8 @@ public class PlayerInput : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
             isGrounded = false;
+            anim.SetBool("isJumping",true);
+
         }
     }
 
@@ -112,13 +128,14 @@ public class PlayerInput : MonoBehaviour
         Debug.Log("Crouching");
         if(value.isPressed)
         {
-            SP.color = Color.red;
             isCrouching = true;
+            anim.SetBool("isCrouching",true);
+
         }
         else
         {
-            SP.color = Color.white;
             isCrouching = false;
+            anim.SetBool("isCrouching",false);
         }
     }
 
@@ -127,6 +144,8 @@ public class PlayerInput : MonoBehaviour
         if(col.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            anim.SetBool("isJumping",false);
+
         }
           if(col.gameObject.CompareTag("Spike"))
         {
@@ -136,10 +155,19 @@ public class PlayerInput : MonoBehaviour
         if(col.gameObject.CompareTag("Slope"))
         {
             speedBoost = true;
+            anim.SetBool("isRunning",true);
+
         }
         if(col.gameObject.CompareTag("Future"))
         {
             GM.GameOver();
+        }
+    }
+    void OnCollisionExit2D(Collision2D col)
+    {
+        if(col.gameObject.CompareTag("Slope"))
+        {
+            StartCoroutine(Cooldown(1f));
         }
     }
     

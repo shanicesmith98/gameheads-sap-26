@@ -35,13 +35,13 @@ public class MirrorSpawner : MonoBehaviour
         }
         
         //SPAWNS AFTER PLAYER WALKS PAST (WITH A DELAY!!)
-        if(PlayerSpawn && !AutoSpawn) //Spawns once the player touches the mirror
+        /*if(PlayerSpawn && !AutoSpawn) //Spawns once the player touches the mirror
         {
             PlayerSpawn = false;
             Invoke("LaunchProjectile", secondsAfterSpawn);
             Destroy(clone,secondsToDestroy);
 
-        }
+        }*/
     }
 
     void LaunchProjectile()
@@ -49,11 +49,12 @@ public class MirrorSpawner : MonoBehaviour
         clone = (GameObject)Instantiate(Projectile, Mirror.position, Quaternion.identity);
     }
 
-    void OnTriggerEnter2D(Collider2D col) //Collision for the player so that way it spawns once
+    void OnCollisionEnter2D(Collision2D col) //Collision for the player so that way it spawns once
     {
-        if(col.CompareTag("Player") && !AutoSpawn)
+        if(col.gameObject.CompareTag("Player"))
         {
-            PlayerSpawn = true;
+            Invoke("LaunchProjectile", secondsAfterSpawn);
+            Destroy(clone,secondsToDestroy);
         }
     }
 }
