@@ -109,6 +109,7 @@ public class PlayerInput : MonoBehaviour
             anim.SetBool("isRunning",false);
 
 
+
             //cue the idle animation woohoo
         }
     }

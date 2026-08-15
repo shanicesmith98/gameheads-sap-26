@@ -139,10 +139,10 @@ TextureImporter:
       name: Jump_Up_Animation_Polished_Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 126
-        y: 555
-        width: 182
-        height: 397
+        x: 127
+        y: 557
+        width: 179
+        height: 394
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,9 +162,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 689
-        y: 553
-        width: 146
-        height: 349
+        y: 554
+        width: 145
+        height: 347
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,9 +184,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1200
-        y: 553
-        width: 147
-        height: 337
+        y: 554
+        width: 146
+        height: 335
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,9 +206,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1712
-        y: 553
-        width: 147
-        height: 361
+        y: 554
+        width: 146
+        height: 359
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: Jump_Up_Animation_Polished_Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 190
-        y: 43
-        width: 152
-        height: 411
+        x: 191
+        y: 44
+        width: 150
+        height: 409
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +249,10 @@ TextureImporter:
       name: Jump_Up_Animation_Polished_Spritesheet_10
       rect:
         serializedVersion: 2
-        x: 702
-        y: 42
-        width: 191
-        height: 417
+        x: 703
+        y: 43
+        width: 189
+        height: 415
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: Jump_Up_Animation_Polished_Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 1209
-        y: 54
-        width: 188
-        height: 413
+        x: 1210
+        y: 55
+        width: 186
+        height: 411
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
