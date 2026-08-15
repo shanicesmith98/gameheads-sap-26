@@ -169,10 +169,10 @@ TextureImporter:
       name: Jump_Fall_Animation_Polished_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 185
-        y: 566
-        width: 183
-        height: 413
+        x: 186
+        y: 567
+        width: 181
+        height: 411
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: Jump_Fall_Animation_Polished_Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 697
-        y: 566
-        width: 180
-        height: 413
+        x: 698
+        y: 567
+        width: 177
+        height: 411
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: Jump_Fall_Animation_Polished_Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1209
-        y: 547
-        width: 174
-        height: 379
+        x: 1210
+        y: 548
+        width: 172
+        height: 377
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,9 +258,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 684
-        y: 45
-        width: 187
-        height: 356
+        y: 47
+        width: 186
+        height: 353
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,9 +280,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1195
-        y: 46
-        width: 188
-        height: 366
+        y: 47
+        width: 187
+        height: 364
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

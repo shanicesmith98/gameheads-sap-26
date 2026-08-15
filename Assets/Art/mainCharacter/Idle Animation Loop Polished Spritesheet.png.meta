@@ -1,46 +1,28 @@
 fileFormatVersion: 2
-guid: 8cc337a0346ef401282ef05399b9935b
+guid: 1b49cada935539440abb66eb4ff6a656
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8398469814594088682
-    second: Jump_Up_Animation_Polished_Spritesheet_0
+      213: 4433008910696461457
+    second: Idle Animation Loop Polished Spritesheet_0
   - first:
-      213: -8850292166648122664
-    second: Jump_Up_Animation_Polished_Spritesheet_1
+      213: -251680091870769224
+    second: Idle Animation Loop Polished Spritesheet_1
   - first:
-      213: -2136123059802702041
-    second: Jump_Up_Animation_Polished_Spritesheet_2
+      213: -5953394863077527752
+    second: Idle Animation Loop Polished Spritesheet_2
   - first:
-      213: 1956679322758427594
-    second: Jump_Up_Animation_Polished_Spritesheet_3
+      213: -805321369977301795
+    second: Idle Animation Loop Polished Spritesheet_3
   - first:
-      213: -2672622956528701832
-    second: Jump_Up_Animation_Polished_Spritesheet_4
+      213: -8104241622364381604
+    second: Idle Animation Loop Polished Spritesheet_4
   - first:
-      213: 6886617642982880341
-    second: Jump_Up_Animation_Polished_Spritesheet_5
+      213: -5317534717598537766
+    second: Idle Animation Loop Polished Spritesheet_5
   - first:
-      213: 7705171948428577694
-    second: Jump_Up_Animation_Polished_Spritesheet_6
-  - first:
-      213: 1568094125469238415
-    second: Jump_Up_Animation_Polished_Spritesheet_7
-  - first:
-      213: -1746158251149854012
-    second: Jump_Up_Animation_Polished_Spritesheet_8
-  - first:
-      213: 2275675240369907358
-    second: Jump_Up_Animation_Polished_Spritesheet_9
-  - first:
-      213: -6663255260842928165
-    second: Jump_Up_Animation_Polished_Spritesheet_10
-  - first:
-      213: -3685724798815347248
-    second: Jump_Up_Animation_Polished_Spritesheet_11
-  - first:
-      213: 7533582157005669426
-    second: Jump_Up_Animation_Polished_Spritesheet_12
+      213: 2076533001642518229
+    second: Idle Animation Loop Polished Spritesheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -136,35 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump_Up_Animation_Polished_Spritesheet_0
+      name: Idle Animation Loop Polished Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 557
-        width: 179
-        height: 394
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 611574c5334a27b80800000000000000
-      internalID: -8398469814594088682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Jump_Up_Animation_Polished_Spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 689
+        x: 185
         y: 554
-        width: 145
-        height: 347
+        width: 172
+        height: 410
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72f70ff0567fa52e0800000000000000
-      internalID: -2136123059802702041
+      spriteID: 19434300e16358d30800000000000000
+      internalID: 4433008910696461457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Up_Animation_Polished_Spritesheet_4
+      name: Idle Animation Loop Polished Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1200
+        x: 697
         y: 554
-        width: 146
-        height: 335
+        width: 172
+        height: 416
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87e6d89c49fe8ead0800000000000000
-      internalID: -2672622956528701832
+      spriteID: 8bf41073a4ad18cf0800000000000000
+      internalID: -251680091870769224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Up_Animation_Polished_Spritesheet_6
+      name: Idle Animation Loop Polished Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1712
+        x: 1209
         y: 554
-        width: 146
-        height: 359
+        width: 170
+        height: 422
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9bc36730154eea60800000000000000
-      internalID: 7705171948428577694
+      spriteID: 83fe0aa1aea416da0800000000000000
+      internalID: -5953394863077527752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Up_Animation_Polished_Spritesheet_8
+      name: Idle Animation Loop Polished Spritesheet_3
       rect:
         serializedVersion: 2
-        x: 191
-        y: 44
-        width: 150
-        height: 409
+        x: 185
+        y: 42
+        width: 163
+        height: 399
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ca7896725664c7e0800000000000000
-      internalID: -1746158251149854012
+      spriteID: dd4d8741b7ce2d4f0800000000000000
+      internalID: -805321369977301795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Up_Animation_Polished_Spritesheet_10
+      name: Idle Animation Loop Polished Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 703
-        y: 43
-        width: 189
-        height: 415
+        x: 348
+        y: 399
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd754b9c4ac5783a0800000000000000
-      internalID: -6663255260842928165
+      spriteID: c5e190dbe23f78f80800000000000000
+      internalID: -8104241622364381604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_Up_Animation_Polished_Spritesheet_12
+      name: Idle Animation Loop Polished Spritesheet_5
       rect:
         serializedVersion: 2
-        x: 1210
-        y: 55
-        width: 186
-        height: 411
+        x: 697
+        y: 42
+        width: 163
+        height: 391
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,8 +243,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2344b82ae09ac8860800000000000000
-      internalID: 7533582157005669426
+      spriteID: ad76bbc09525436b0800000000000000
+      internalID: -5317534717598537766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle Animation Loop Polished Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 392
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d6274753c351dc10800000000000000
+      internalID: 2076533001642518229
       vertices: []
       indices: 
       edges: []
@@ -293,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bd0e6e2ce6f6041cc8f47e2a1660f408
+    spriteID: 6b5bf40898a37944ab52d718b7bd55f9
     internalID: 0
     vertices: []
     indices: 
@@ -303,20 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Jump_Up_Animation_Polished_Spritesheet_0: -8398469814594088682
-      Jump_Up_Animation_Polished_Spritesheet_1: -8850292166648122664
-      Jump_Up_Animation_Polished_Spritesheet_10: -6663255260842928165
-      Jump_Up_Animation_Polished_Spritesheet_11: -3685724798815347248
-      Jump_Up_Animation_Polished_Spritesheet_12: 7533582157005669426
-      Jump_Up_Animation_Polished_Spritesheet_13: -1353014736
-      Jump_Up_Animation_Polished_Spritesheet_2: -2136123059802702041
-      Jump_Up_Animation_Polished_Spritesheet_3: 1956679322758427594
-      Jump_Up_Animation_Polished_Spritesheet_4: -2672622956528701832
-      Jump_Up_Animation_Polished_Spritesheet_5: 6886617642982880341
-      Jump_Up_Animation_Polished_Spritesheet_6: 7705171948428577694
-      Jump_Up_Animation_Polished_Spritesheet_7: 1568094125469238415
-      Jump_Up_Animation_Polished_Spritesheet_8: -1746158251149854012
-      Jump_Up_Animation_Polished_Spritesheet_9: 2275675240369907358
+      Idle Animation Loop Polished Spritesheet_0: 4433008910696461457
+      Idle Animation Loop Polished Spritesheet_1: -251680091870769224
+      Idle Animation Loop Polished Spritesheet_2: -5953394863077527752
+      Idle Animation Loop Polished Spritesheet_3: -805321369977301795
+      Idle Animation Loop Polished Spritesheet_4: -8104241622364381604
+      Idle Animation Loop Polished Spritesheet_5: -5317534717598537766
+      Idle Animation Loop Polished Spritesheet_6: 2076533001642518229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
