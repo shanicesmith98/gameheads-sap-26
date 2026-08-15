@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: d7bd576d6a8fc4aa3a85ce6d4b5ae5e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4915324844268752911
+    second: Jump_Fall_Animation_Polished_Spritesheet_0
+  - first:
+      213: -6443588996938687767
+    second: Jump_Fall_Animation_Polished_Spritesheet_1
+  - first:
+      213: 201549474461633287
+    second: Jump_Fall_Animation_Polished_Spritesheet_2
+  - first:
+      213: 885451352685469351
+    second: Jump_Fall_Animation_Polished_Spritesheet_3
+  - first:
+      213: -3527052801352032958
+    second: Jump_Fall_Animation_Polished_Spritesheet_4
+  - first:
+      213: -7873042081032443099
+    second: Jump_Fall_Animation_Polished_Spritesheet_5
+  - first:
+      213: -3526759226536796113
+    second: Jump_Fall_Animation_Polished_Spritesheet_6
+  - first:
+      213: -2675699401500260182
+    second: Jump_Fall_Animation_Polished_Spritesheet_7
+  - first:
+      213: -5038892073331516834
+    second: Jump_Fall_Animation_Polished_Spritesheet_8
+  - first:
+      213: 2228718156525083993
+    second: Jump_Fall_Animation_Polished_Spritesheet_9
+  - first:
+      213: -7021928055936641366
+    second: Jump_Fall_Animation_Polished_Spritesheet_10
+  - first:
+      213: -6134401980096956774
+    second: Jump_Fall_Animation_Polished_Spritesheet_11
+  - first:
+      213: 6230214324448738780
+    second: Jump_Fall_Animation_Polished_Spritesheet_12
+  - first:
+      213: -868474612350517550
+    second: Jump_Fall_Animation_Polished_Spritesheet_13
+  - first:
+      213: 9086459236663922232
+    second: Jump_Fall_Animation_Polished_Spritesheet_14
+  - first:
+      213: 3822696653634105273
+    second: Jump_Fall_Animation_Polished_Spritesheet_15
+  - first:
+      213: 6865743357135205605
+    second: Jump_Fall_Animation_Polished_Spritesheet_16
+  - first:
+      213: 2104140176947678798
+    second: Jump_Fall_Animation_Polished_Spritesheet_17
+  - first:
+      213: -7170421525393597459
+    second: Jump_Fall_Animation_Polished_Spritesheet_18
+  - first:
+      213: -4745670587096625474
+    second: Jump_Fall_Animation_Polished_Spritesheet_19
+  - first:
+      213: -3268193334687448329
+    second: Jump_Fall_Animation_Polished_Spritesheet_20
+  - first:
+      213: -3979659074131802942
+    second: Jump_Fall_Animation_Polished_Spritesheet_21
+  - first:
+      213: -67523202976155500
+    second: Jump_Fall_Animation_Polished_Spritesheet_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jump_Fall_Animation_Polished_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 566
+        width: 183
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea9ad662f5c396a0800000000000000
+      internalID: -6443588996938687767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Fall_Animation_Polished_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 566
+        width: 180
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aed4be5051c94c00800000000000000
+      internalID: 885451352685469351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Fall_Animation_Polished_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 547
+        width: 174
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52beb52c0f55db290800000000000000
+      internalID: -7873042081032443099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Fall_Animation_Polished_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 39
+        width: 172
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d1428ea5ffdee10800000000000000
+      internalID: 2228718156525083993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Fall_Animation_Polished_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 45
+        width: 187
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a963eda86e93edaa0800000000000000
+      internalID: -6134401980096956774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Fall_Animation_Polished_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 46
+        width: 188
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2def66201fe82f3f0800000000000000
+      internalID: -868474612350517550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 595833d88f7fe43b6ae73eb633c288a0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jump_Fall_Animation_Polished_Spritesheet_0: -4915324844268752911
+      Jump_Fall_Animation_Polished_Spritesheet_1: -6443588996938687767
+      Jump_Fall_Animation_Polished_Spritesheet_10: -7021928055936641366
+      Jump_Fall_Animation_Polished_Spritesheet_11: -6134401980096956774
+      Jump_Fall_Animation_Polished_Spritesheet_12: 6230214324448738780
+      Jump_Fall_Animation_Polished_Spritesheet_13: -868474612350517550
+      Jump_Fall_Animation_Polished_Spritesheet_14: 9086459236663922232
+      Jump_Fall_Animation_Polished_Spritesheet_15: 3822696653634105273
+      Jump_Fall_Animation_Polished_Spritesheet_16: 6865743357135205605
+      Jump_Fall_Animation_Polished_Spritesheet_17: 2104140176947678798
+      Jump_Fall_Animation_Polished_Spritesheet_18: -7170421525393597459
+      Jump_Fall_Animation_Polished_Spritesheet_19: -4745670587096625474
+      Jump_Fall_Animation_Polished_Spritesheet_2: 201549474461633287
+      Jump_Fall_Animation_Polished_Spritesheet_20: -3268193334687448329
+      Jump_Fall_Animation_Polished_Spritesheet_21: -3979659074131802942
+      Jump_Fall_Animation_Polished_Spritesheet_22: -67523202976155500
+      Jump_Fall_Animation_Polished_Spritesheet_3: 885451352685469351
+      Jump_Fall_Animation_Polished_Spritesheet_4: -3527052801352032958
+      Jump_Fall_Animation_Polished_Spritesheet_5: -7873042081032443099
+      Jump_Fall_Animation_Polished_Spritesheet_6: -3526759226536796113
+      Jump_Fall_Animation_Polished_Spritesheet_7: -2675699401500260182
+      Jump_Fall_Animation_Polished_Spritesheet_8: -5038892073331516834
+      Jump_Fall_Animation_Polished_Spritesheet_9: 2228718156525083993
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

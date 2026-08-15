@@ -1,28 +1,46 @@
 fileFormatVersion: 2
-guid: a272ef3a02f33469396ac094be1bca2e
+guid: 8cc337a0346ef401282ef05399b9935b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3204290344396990444
-    second: sprite_sheet (3)_0
+      213: -8398469814594088682
+    second: Jump_Up_Animation_Polished_Spritesheet_0
   - first:
-      213: 7332862405812815151
-    second: sprite_sheet (3)_1
+      213: -8850292166648122664
+    second: Jump_Up_Animation_Polished_Spritesheet_1
   - first:
-      213: -9136718100887295082
-    second: sprite_sheet (3)_2
+      213: -2136123059802702041
+    second: Jump_Up_Animation_Polished_Spritesheet_2
   - first:
-      213: 1677797932986182739
-    second: sprite_sheet (3)_3
+      213: 1956679322758427594
+    second: Jump_Up_Animation_Polished_Spritesheet_3
   - first:
-      213: -1327541238063928221
-    second: sprite_sheet (3)_4
+      213: -2672622956528701832
+    second: Jump_Up_Animation_Polished_Spritesheet_4
   - first:
-      213: 4648200429284012715
-    second: sprite_sheet (3)_5
+      213: 6886617642982880341
+    second: Jump_Up_Animation_Polished_Spritesheet_5
   - first:
-      213: 3283334168581005867
-    second: sprite_sheet (3)_6
+      213: 7705171948428577694
+    second: Jump_Up_Animation_Polished_Spritesheet_6
+  - first:
+      213: 1568094125469238415
+    second: Jump_Up_Animation_Polished_Spritesheet_7
+  - first:
+      213: -1746158251149854012
+    second: Jump_Up_Animation_Polished_Spritesheet_8
+  - first:
+      213: 2275675240369907358
+    second: Jump_Up_Animation_Polished_Spritesheet_9
+  - first:
+      213: -6663255260842928165
+    second: Jump_Up_Animation_Polished_Spritesheet_10
+  - first:
+      213: -3685724798815347248
+    second: Jump_Up_Animation_Polished_Spritesheet_11
+  - first:
+      213: 7533582157005669426
+    second: Jump_Up_Animation_Polished_Spritesheet_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,155 +136,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_sheet (3)_0
+      name: Jump_Up_Animation_Polished_Spritesheet_0
       rect:
         serializedVersion: 2
-        x: 73
-        y: 394
+        x: 126
+        y: 555
         width: 182
-        height: 120
+        height: 397
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0ea83dc1382b343379b8811b0de6de6b
-      internalID: 3204290344396990444
+      spriteID: 611574c5334a27b80800000000000000
+      internalID: -8398469814594088682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (3)_1
+      name: Jump_Up_Animation_Polished_Spritesheet_2
       rect:
         serializedVersion: 2
-        x: 408
-        y: 394
-        width: 165
-        height: 111
+        x: 689
+        y: 553
+        width: 146
+        height: 349
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: efb1b4c929cf74823a2f8e5049ca91cd
-      internalID: 7332862405812815151
+      spriteID: 72f70ff0567fa52e0800000000000000
+      internalID: -2136123059802702041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (3)_2
+      name: Jump_Up_Animation_Polished_Spritesheet_4
       rect:
         serializedVersion: 2
-        x: 747
-        y: 393
-        width: 144
-        height: 96
+        x: 1200
+        y: 553
+        width: 147
+        height: 337
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 69ab0884a2c5e4fafbad8a94e6530461
-      internalID: -9136718100887295082
+      spriteID: 87e6d89c49fe8ead0800000000000000
+      internalID: -2672622956528701832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (3)_3
+      name: Jump_Up_Animation_Polished_Spritesheet_6
       rect:
         serializedVersion: 2
-        x: 93
-        y: 87
-        width: 142
-        height: 90
+        x: 1712
+        y: 553
+        width: 147
+        height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 199c2842986244906991cdc88a11c095
-      internalID: 1677797932986182739
+      spriteID: e9bc36730154eea60800000000000000
+      internalID: 7705171948428577694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (3)_4
+      name: Jump_Up_Animation_Polished_Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 231
-        y: 115
-        width: 4
-        height: 4
+        x: 190
+        y: 43
+        width: 152
+        height: 411
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5116fbbc202814e46af45b6271846213
-      internalID: -1327541238063928221
+      spriteID: 4ca7896725664c7e0800000000000000
+      internalID: -1746158251149854012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (3)_5
+      name: Jump_Up_Animation_Polished_Spritesheet_10
       rect:
         serializedVersion: 2
-        x: 419
-        y: 87
-        width: 144
-        height: 98
+        x: 702
+        y: 42
+        width: 191
+        height: 417
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 21b13bf08b3ec4c2688cc7b1e1c7739f
-      internalID: 4648200429284012715
+      spriteID: bd754b9c4ac5783a0800000000000000
+      internalID: -6663255260842928165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (3)_6
+      name: Jump_Up_Animation_Polished_Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 736
-        y: 90
-        width: 165
-        height: 111
+        x: 1209
+        y: 54
+        width: 188
+        height: 413
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 26e0c0d1be5314c27850ea8f3b516f9b
-      internalID: 3283334168581005867
+      spriteID: 2344b82ae09ac8860800000000000000
+      internalID: 7533582157005669426
       vertices: []
       indices: 
       edges: []
@@ -275,7 +293,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cac3a309e45d041a79b0daa7198f535e
+    spriteID: bd0e6e2ce6f6041cc8f47e2a1660f408
     internalID: 0
     vertices: []
     indices: 
@@ -283,19 +301,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceOnImport
-        value: True
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":2560.0,"y":1440.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      sprite_sheet (3)_0: 3204290344396990444
-      sprite_sheet (3)_1: 7332862405812815151
-      sprite_sheet (3)_2: -9136718100887295082
-      sprite_sheet (3)_3: 1677797932986182739
-      sprite_sheet (3)_4: -1327541238063928221
-      sprite_sheet (3)_5: 4648200429284012715
-      sprite_sheet (3)_6: 3283334168581005867
+      Jump_Up_Animation_Polished_Spritesheet_0: -8398469814594088682
+      Jump_Up_Animation_Polished_Spritesheet_1: -8850292166648122664
+      Jump_Up_Animation_Polished_Spritesheet_10: -6663255260842928165
+      Jump_Up_Animation_Polished_Spritesheet_11: -3685724798815347248
+      Jump_Up_Animation_Polished_Spritesheet_12: 7533582157005669426
+      Jump_Up_Animation_Polished_Spritesheet_13: -1353014736
+      Jump_Up_Animation_Polished_Spritesheet_2: -2136123059802702041
+      Jump_Up_Animation_Polished_Spritesheet_3: 1956679322758427594
+      Jump_Up_Animation_Polished_Spritesheet_4: -2672622956528701832
+      Jump_Up_Animation_Polished_Spritesheet_5: 6886617642982880341
+      Jump_Up_Animation_Polished_Spritesheet_6: 7705171948428577694
+      Jump_Up_Animation_Polished_Spritesheet_7: 1568094125469238415
+      Jump_Up_Animation_Polished_Spritesheet_8: -1746158251149854012
+      Jump_Up_Animation_Polished_Spritesheet_9: 2275675240369907358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
