@@ -11,12 +11,25 @@ public class GameManager : MonoBehaviour
     public float timeRemaining = 300; //5 min
     public bool timerOn = false;
 
+    public string sceneName;
+
+
     public TMP_Text Timer;
-    public TMP_Text GameOverText;
+    public GameObject GameOverScreen;
+    public GameObject InGameUI;
+
+    ManagerScene SM;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameOverText.gameObject.SetActive(false);
+        GameOverScreen.gameObject.SetActive(false);
+        InGameUI.gameObject.SetActive(true);
+
+        SM = FindFirstObjectByType<ManagerScene>();
+        Scene currentScene = SceneManager.GetActiveScene ();
+
+        sceneName = currentScene.name;
+
 
     }
 
@@ -53,14 +66,29 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("GameOver!");
         isGameOver = true;
-        GameOverText.gameObject.SetActive(true);
-        GameOverText.text = "GAME OVER!";
-        Invoke("LoadSceneAgain", 1f);
+        InGameUI.gameObject.SetActive(false);
+        GameOverScreen.gameObject.SetActive(true);
+        Invoke("LoadSceneAgain", 5f);
     }   
 
-    void LoadSceneAgain()
+    public void LoadSceneAgain()
     {
         SceneManager.LoadScene(0);
     } 
+    public void RestartLevel()
+    {
+        if(sceneName == "LevelOne")
+            {
+                SM.LevelOne();
+            }
+            else if(sceneName == "LevelTwo")
+            {
+                SM.LevelTwo();
+            }
+             else if(sceneName == "LevelThree")
+            {
+                SM.LevelThree();
+            }
+    }
 
 }

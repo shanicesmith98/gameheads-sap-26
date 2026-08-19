@@ -9,19 +9,22 @@ public class PlayerFear : MonoBehaviour //GameManager (I'm scared to rename the 
     public bool DarkLevel = true;
     public float maxFear = 100f;
     public float currentFear;
-
+    float currentOpacity;
+    
 
 
     public Slider FearSlider;
+    public Image VisHealth;
     GameManager GM;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         GM = FindFirstObjectByType<GameManager>();
-
         currentFear = 0;
         UpdateFearUI();
+
+        currentOpacity = currentFear/maxFear;
     }
 
     public void TakeDamage(float damage)
@@ -37,9 +40,10 @@ public class PlayerFear : MonoBehaviour //GameManager (I'm scared to rename the 
         {
             FearSlider.value = currentFear / maxFear;
         }
+        Color currentOpacity = new Color(0f,0f,0f,currentFear/maxFear);
+        VisHealth.color = currentOpacity;
     }
 
-   
 
     void Update()
     {

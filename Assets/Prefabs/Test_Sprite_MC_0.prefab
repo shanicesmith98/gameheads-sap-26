@@ -347,10 +347,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0995a3c351f914282b7847a548c964e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFear
-  DarkLevel: 1
+  DarkLevel: 0
   maxFear: 100
   currentFear: 0
   FearSlider: {fileID: 0}
+  VisHealth: {fileID: 0}
 --- !u!114 &3689418317851296734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,8 +367,10 @@ MonoBehaviour:
   isGameOver: 0
   timeRemaining: 300
   timerOn: 0
+  sceneName: 
   Timer: {fileID: 0}
-  GameOverText: {fileID: 0}
+  GameOverScreen: {fileID: 0}
+  InGameUI: {fileID: 0}
 --- !u!114 &764515518135295574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +404,7 @@ GameObject:
   - component: {fileID: 1514436584873445072}
   m_Layer: 0
   m_Name: Test_Sprite_MC_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,6 +500,7 @@ MonoBehaviour:
   Speed: 7
   jumpHeight: 12
   isCrouching: 0
+  Spawn: 0
 --- !u!114 &1910748874915023520
 MonoBehaviour:
   m_ObjectHideFlags: 0
