@@ -362,10 +362,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1727625681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 887.0378, y: -465.06482}
-  m_SizeDelta: {x: 1774.0657, y: 1046.623}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 392.03778, y: -226.06482}
+  m_SizeDelta: {x: 784.0657, y: 568.62305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &588171307
 MonoBehaviour:
@@ -785,6 +785,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ManagerScene
   StartMenu: {fileID: 1727625677}
   HubWorld: {fileID: 1544426430}
+  sceneName: 
+  EndOfLevel: 0
 --- !u!1 &1433169112
 GameObject:
   m_ObjectHideFlags: 0
