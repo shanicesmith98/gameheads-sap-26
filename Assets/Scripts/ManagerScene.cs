@@ -41,6 +41,7 @@ public class ManagerScene : MonoBehaviour
         }
 
     }
+
       public void LoadHubWorld()
     {
         StartMenu.gameObject.SetActive(false);

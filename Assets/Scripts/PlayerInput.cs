@@ -13,6 +13,10 @@ public class PlayerInput : MonoBehaviour
     public bool isCrouching = false;
     public bool Spawn = false;
 
+    public float FearMeter_DepletionRate = 5f;
+    public float FearMeter_HealingRate = 5f;
+
+
     private bool isGrounded;
     private bool touchingLight;
     private bool speedBoost = false;
@@ -43,11 +47,11 @@ public class PlayerInput : MonoBehaviour
         {
             if(touchingLight)
             {
-            PF.TakeDamage(-5 * Time.deltaTime);
+            PF.TakeDamage(-FearMeter_HealingRate * Time.deltaTime);
             }
             else
             {
-            PF.TakeDamage(5 * Time.deltaTime);
+            PF.TakeDamage(FearMeter_DepletionRate * Time.deltaTime);
             }
         }
 
@@ -85,8 +89,14 @@ public class PlayerInput : MonoBehaviour
     public void OnMove(InputValue value)
     {        
         Debug.Log($"MoveInput: {moveInput}");
-
+        if(!GM.isGameOver)
+        {
         moveInput = value.Get<Vector2>().x;
+        }
+        else
+        {
+            moveInput = 0f;
+        }
 
         if(moveInput > 0 )
         {
@@ -179,6 +189,8 @@ public class PlayerInput : MonoBehaviour
         {
             Debug.Log("Is touching light");
             touchingLight = true;
+            anim.SetBool("isHealing",true);
+
         }
         if(oth.CompareTag("Projectile"))
         {
@@ -202,6 +214,8 @@ public class PlayerInput : MonoBehaviour
         {
             Debug.Log("Is NOT touching light");
             touchingLight = false;
+            anim.SetBool("isHealing",false);
+
         }
     }
 
