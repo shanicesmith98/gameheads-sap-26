@@ -38,13 +38,6 @@ public class MirrorSpawner : MonoBehaviour
             }
             Destroy(clone,secondsToDestroy);
         }
-
-        if(P.Spawn)
-        {
-            Invoke("LaunchProjectile", secondsAfterSpawn);
-            Destroy(clone,secondsToDestroy);
-            P.Spawn = false;
-        }
         
         //SPAWNS AFTER PLAYER WALKS PAST (WITH A DELAY!!)
         /*if(PlayerSpawn && !AutoSpawn) //Spawns once the player touches the mirror
