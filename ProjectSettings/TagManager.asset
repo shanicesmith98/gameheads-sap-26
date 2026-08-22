@@ -13,6 +13,7 @@ TagManager:
   - Future
   - EndOfLevel
   - Mirror
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
