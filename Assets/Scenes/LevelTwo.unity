@@ -477,17 +477,51 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364181422}
   m_Enabled: 1
-  m_Tiles: {}
+  m_Tiles:
+  - first: {x: -22, y: 51, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
-  m_TileAssetArray: []
-  m_TileSpriteArray: []
-  m_TileMatrixArray: []
-  m_TileColorArray: []
+  m_TileAssetArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 8fd4dd9c4062ecc4481088090e83c84e, type: 2}
+  m_TileSpriteArray:
+  - m_RefCount: 1
+    m_Data: {fileID: 266839994, guid: 4e02a49be20f83540b37817293338898, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 1
+    m_Data:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_TileColorArray:
+  - m_RefCount: 1
+    m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 0, y: 0, z: 1}
+  m_Origin: {x: -22, y: 0, z: 0}
+  m_Size: {x: 22, y: 52, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -1315,6 +1349,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 669051248098455343, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.20000137
+      objectReference: {fileID: 0}
+    - target: {fileID: 669051248098455343, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35714066
+      objectReference: {fileID: 0}
+    - target: {fileID: 736102083736276751, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514708665486640038, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
+      propertyPath: orthographic size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3689418317851296734, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
       propertyPath: InGameUI
       value: 
@@ -1327,6 +1377,10 @@ PrefabInstance:
       propertyPath: VisHealth
       value: 
       objectReference: {fileID: 894962012}
+    - target: {fileID: 7361970717531274012, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7367398743465087087, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
       propertyPath: m_Name
       value: Test_Sprite_MC_0
