@@ -402,6 +402,7 @@ GameObject:
   - component: {fileID: 5872663186091876581}
   - component: {fileID: 4348423347408487020}
   - component: {fileID: 1514436584873445072}
+  - component: {fileID: -2275109213552520700}
   m_Layer: 0
   m_Name: Test_Sprite_MC_0
   m_TagString: Player
@@ -501,6 +502,8 @@ MonoBehaviour:
   jumpHeight: 12
   isCrouching: 0
   Spawn: 0
+  FearMeter_DepletionRate: 5
+  FearMeter_HealingRate: 5
 --- !u!114 &1910748874915023520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,3 +649,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-2275109213552520700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7367398743465087087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e86c315d822140819b648211a1cf7ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
