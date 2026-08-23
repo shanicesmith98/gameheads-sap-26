@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text Timer;
     public GameObject GameOverScreen;
     public GameObject InGameUI;
+    public GameObject LevelComplete;
+
 
     ManagerScene SM;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
     {
         GameOverScreen.gameObject.SetActive(false);
         InGameUI.gameObject.SetActive(true);
+        LevelComplete.gameObject.SetActive(false);
+
 
         SM = FindFirstObjectByType<ManagerScene>();
         Scene currentScene = SceneManager.GetActiveScene ();
