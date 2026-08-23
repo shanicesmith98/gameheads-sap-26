@@ -7,26 +7,34 @@ using System.Collections.Generic;
 
 public class ManagerScene : MonoBehaviour
 {
-    public GameObject StartMenu;
-    public GameObject HubWorld;
     public string sceneName;
-    public bool EndOfLevel = false;
+
+
+    public bool completedLevelOne;
+    public bool completedLevelTwo;
+
+
+    PlayerInput PI;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene ();
         sceneName = currentScene.name;
-        HubWorld.gameObject.SetActive(false);
+
+
+        PI = FindFirstObjectByType<PlayerInput>();
+        
 
     }
-
     // Update is called once per frame
     void Update()
     {
-        if(EndOfLevel)
-        {
-            if(sceneName == "LevelOne")
+
+    }
+    public void Continue()
+    {
+        if(sceneName == "LevelOne")
             {
                 LevelTwo();
             }
@@ -34,19 +42,13 @@ public class ManagerScene : MonoBehaviour
             {
                 LevelThree();
             }
-             else if(sceneName == "SampleScene")
-            {
-                MainMenu();
-            }
-        }
-
     }
 
-      public void LoadHubWorld()
-    {
-        StartMenu.gameObject.SetActive(false);
-        HubWorld.gameObject.SetActive(true);
+      public void HubWorld()
+    {         
+        SceneManager.LoadSceneAsync(4);
     }
+
     public void LevelOne()
     {
         SceneManager.LoadSceneAsync(1);
@@ -58,6 +60,7 @@ public class ManagerScene : MonoBehaviour
         public void LevelThree()
     {
         SceneManager.LoadSceneAsync(3);
+
     }
      public void MainMenu()
     {

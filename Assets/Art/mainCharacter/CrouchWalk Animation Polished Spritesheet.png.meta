@@ -130,7 +130,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_sheet (1)_0
+      name: CrouchWalk Animation Polished Spritesheet_0
       rect:
         serializedVersion: 2
         x: 123
@@ -143,16 +143,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8ba05c2293c41fcb0800000000000000
-      internalID: -4831997116911646024
+      spriteID: ad6f4c07793e74afabdf8b4c0c10a0f1
+      internalID: 1492434175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_1
+      name: CrouchWalk Animation Polished Spritesheet_1
       rect:
         serializedVersion: 2
         x: 629
@@ -165,16 +165,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8fbd0c83f972357b0800000000000000
-      internalID: -5236798376896308232
+      spriteID: cd25f05346ab747e9b562f5de6783fa7
+      internalID: 1063365683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_2
+      name: CrouchWalk Animation Polished Spritesheet_2
       rect:
         serializedVersion: 2
         x: 1199
@@ -187,16 +187,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bc5fa143bf42f0d00800000000000000
-      internalID: 941011508473296331
+      spriteID: e5de51d630b7042d3b51963f5e8017df
+      internalID: 1198642287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_3
+      name: CrouchWalk Animation Polished Spritesheet_3
       rect:
         serializedVersion: 2
         x: 1720
@@ -209,16 +209,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ac22f470fa31900d0800000000000000
-      internalID: -3456209596567313718
+      spriteID: 3c58bf1a8403f48939c7c393979a8fe3
+      internalID: -404078135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_4
+      name: CrouchWalk Animation Polished Spritesheet_4
       rect:
         serializedVersion: 2
         x: 143
@@ -231,16 +231,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6cef5f1659d90efd0800000000000000
-      internalID: -2314676943549235514
+      spriteID: a1191f1a36c24458baec79fe254bd9c9
+      internalID: -1966575860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_5
+      name: CrouchWalk Animation Polished Spritesheet_5
       rect:
         serializedVersion: 2
         x: 673
@@ -253,16 +253,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4e14d41cbdfccd540800000000000000
-      internalID: 5034127026241225188
+      spriteID: 6df6c5d76eccf4e3e88d38071646a514
+      internalID: -317175489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_6
+      name: CrouchWalk Animation Polished Spritesheet_6
       rect:
         serializedVersion: 2
         x: 1174
@@ -275,16 +275,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2fb4cfa59e7422c40800000000000000
-      internalID: 5486026363670121458
+      spriteID: 5f6d002e8e6df4ece8e5b5a2ec961361
+      internalID: 132732545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_7
+      name: CrouchWalk Animation Polished Spritesheet_7
       rect:
         serializedVersion: 2
         x: 1685
@@ -297,16 +297,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8321d0d6313ad21b0800000000000000
-      internalID: -5679704251215048136
+      spriteID: 09ac70682d68340fe9927db8616cfb9f
+      internalID: -1693300446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_8
+      name: CrouchWalk Animation Polished Spritesheet_8
       rect:
         serializedVersion: 2
         x: 143
@@ -319,16 +319,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4e5a786bdd8a3bb10800000000000000
-      internalID: 1996124730058843620
+      spriteID: b1e896d68ade5480080b6619f2b2febe
+      internalID: 517599264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_9
+      name: CrouchWalk Animation Polished Spritesheet_9
       rect:
         serializedVersion: 2
         x: 670
@@ -341,16 +341,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 235d5cf0896016bc0800000000000000
-      internalID: -3791742161099827918
+      spriteID: b9ebbe3db46844b6d9b15c25e4b2091a
+      internalID: -3769845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet (1)_10
+      name: CrouchWalk Animation Polished Spritesheet_10
       rect:
         serializedVersion: 2
         x: 1192
@@ -363,10 +363,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5fd71ef9c0ee8d890800000000000000
-      internalID: -7432929446985630219
+      spriteID: e578e8113631743508e46745be3639da
+      internalID: -2074295930
       vertices: []
       indices: 
       edges: []
@@ -385,19 +385,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":524.0,"y":524.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      sprite_sheet (1)_0: -4831997116911646024
-      sprite_sheet (1)_1: -5236798376896308232
-      sprite_sheet (1)_10: -7432929446985630219
-      sprite_sheet (1)_2: 941011508473296331
-      sprite_sheet (1)_3: -3456209596567313718
-      sprite_sheet (1)_4: -2314676943549235514
-      sprite_sheet (1)_5: 5034127026241225188
-      sprite_sheet (1)_6: 5486026363670121458
-      sprite_sheet (1)_7: -5679704251215048136
-      sprite_sheet (1)_8: 1996124730058843620
-      sprite_sheet (1)_9: -3791742161099827918
+      CrouchWalk Animation Polished Spritesheet_0: 1492434175
+      CrouchWalk Animation Polished Spritesheet_1: 1063365683
+      CrouchWalk Animation Polished Spritesheet_10: -2074295930
+      CrouchWalk Animation Polished Spritesheet_2: 1198642287
+      CrouchWalk Animation Polished Spritesheet_3: -404078135
+      CrouchWalk Animation Polished Spritesheet_4: -1966575860
+      CrouchWalk Animation Polished Spritesheet_5: -317175489
+      CrouchWalk Animation Polished Spritesheet_6: 132732545
+      CrouchWalk Animation Polished Spritesheet_7: -1693300446
+      CrouchWalk Animation Polished Spritesheet_8: 517599264
+      CrouchWalk Animation Polished Spritesheet_9: -3769845
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

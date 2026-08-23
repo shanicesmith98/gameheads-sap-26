@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 230459227931931833}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.500008, y: -0.3571408, z: -10}
+  m_LocalPosition: {x: -0, y: -0.3571408, z: -10}
   m_LocalScale: {x: 14.285714, y: 14.285714, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 12.124355
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -192,7 +192,7 @@ Transform:
   m_GameObject: {fileID: 1878605691151396195}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.500008, y: -0.3571408, z: -10}
+  m_LocalPosition: {x: 0, y: -0.35714066, z: -10}
   m_LocalScale: {x: 14.285714, y: 14.285714, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -208,7 +208,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.09424448, g: 0.07694019, b: 0.122641504, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -233,7 +233,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12.124355
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0995a3c351f914282b7847a548c964e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFear
-  DarkLevel: 0
+  DarkLevel: 1
   maxFear: 100
   currentFear: 0
   FearSlider: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 1514436584873445072}
   - component: {fileID: -2275109213552520700}
   m_Layer: 0
-  m_Name: Test_Sprite_MC_0
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -498,12 +498,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28b81823cf814311bcd47c8908d2567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
-  Speed: 7
+  Speed: 4
   jumpHeight: 12
   isCrouching: 0
   Spawn: 0
-  FearMeter_DepletionRate: 5
-  FearMeter_HealingRate: 5
+  FearMeter_DepletionRate: 4
+  FearMeter_HealingRate: 8
 --- !u!114 &1910748874915023520
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,7 +10,10 @@ public class PlayerInput : MonoBehaviour
 
     public float Speed = 5f;
     public float jumpHeight = 5f;
+
     public bool isCrouching = false;
+
+
     public bool Spawn = false;
 
     public float FearMeter_DepletionRate = 5f;
@@ -35,6 +38,8 @@ public class PlayerInput : MonoBehaviour
         PF = FindFirstObjectByType<PlayerFear>();
         GM = FindFirstObjectByType<GameManager>();
         MS = FindFirstObjectByType<ManagerScene>();
+
+
         SP = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
@@ -138,17 +143,18 @@ public class PlayerInput : MonoBehaviour
     public void OnCrouch(InputValue value)
     {
         Debug.Log("Crouching");
-        if(value.isPressed)
-        {
-            isCrouching = true;
-            anim.SetBool("isCrouching",true);
 
-        }
-        else
-        {
+            if(value.isPressed && MS.sceneName == "LevelTwo" || value.isPressed && MS.sceneName == "LevelThree" )
+            {
+                isCrouching = true;
+             anim.SetBool("isCrouching",true);
+
+            }
+            else
+            {  
             isCrouching = false;
             anim.SetBool("isCrouching",false);
-        }
+            }   
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -201,7 +207,7 @@ public class PlayerInput : MonoBehaviour
         }
          if(oth.CompareTag("EndOfLevel"))
         {
-            MS.EndOfLevel = true;
+            GM.LevelComplete.gameObject.SetActive(true);
         }
         if(oth.CompareTag("Mirror"))
         {
