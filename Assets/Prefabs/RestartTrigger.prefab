@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8737619936159178575}
   - component: {fileID: 2929274114971281908}
   - component: {fileID: 5453134456411212600}
-  - component: {fileID: 8365310674502797635}
   m_Layer: 0
   m_Name: RestartTrigger
   m_TagString: Untagged
@@ -139,15 +138,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8365310674502797635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5398671798637760888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b94a164923a94fcdb8e99ac7823ee90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
