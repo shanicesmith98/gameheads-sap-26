@@ -539,7 +539,7 @@ AnimatorStateMachine:
     m_Position: {x: -840, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8443878380418708542}
-    m_Position: {x: 1500, y: 290, z: 0}
+    m_Position: {x: 1120, y: 520, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -766,7 +766,7 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isWalking
     m_EventTreshold: 0
-  - m_ConditionMode: 1
+  - m_ConditionMode: 2
     m_ConditionEvent: isCrouching
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}

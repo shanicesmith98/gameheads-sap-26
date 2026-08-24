@@ -13,8 +13,10 @@ public class ManagerScene : MonoBehaviour
     public bool completedLevelOne;
     public bool completedLevelTwo;
 
+    public bool Play = false;
 
     PlayerInput PI;
+    PlayerFear PF;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,6 +26,17 @@ public class ManagerScene : MonoBehaviour
 
 
         PI = FindFirstObjectByType<PlayerInput>();
+        PF = FindFirstObjectByType<PlayerFear>();
+
+         if(sceneName == "LevelThree" ||sceneName == "LevelTwo")
+        {
+            PF.DarkLevel = false;
+        }
+        else if(sceneName == "LevelOne")
+        {
+            PF.DarkLevel = true;
+        }
+  
         
 
     }
@@ -35,13 +48,13 @@ public class ManagerScene : MonoBehaviour
     public void Continue()
     {
         if(sceneName == "LevelOne")
-            {
-                LevelTwo();
-            }
-            else if(sceneName == "LevelTwo")
-            {
-                LevelThree();
-            }
+        {
+            LevelTwo();
+        }
+        if(sceneName == "LevelTwo")
+        {
+            LevelThree();
+        }
     }
 
       public void HubWorld()
