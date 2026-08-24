@@ -1,8 +1,17 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     Vector2 checkpointPosition;
+    Rigidbody2D playerRigidbody;
+    Vector3 originalScale;
+
+    private void Awake()
+    {
+        playerRigidbody = GetComponent<Rigidbody2D>();
+        originalScale = transform.localScale;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -12,12 +21,18 @@ public class PlayerController : MonoBehaviour
 
     void Die()
     {
-        Respawn();
+        StartCoroutine(Respawn(0.25f));
     }
 
-    private void Respawn()
+    IEnumerator Respawn(float duration)
     {
+        playerRigidbody.simulated = false;
+        playerRigidbody.linearVelocity = Vector2.zero;
+        transform.localScale = new Vector3(0, 0, 0);
+        yield return new WaitForSeconds(duration);
         transform.position = checkpointPosition;
+        transform.localScale = originalScale;
+        playerRigidbody.simulated = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,11 +40,6 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("FallDetector"))
         {
             Die();
-        }
-        else if (collision.CompareTag("Checkpoint"))
-        {
-            Debug.Log("Checkpoint reached!");
-            UpdateCheckpoint(collision.transform.position);
         }
     }
     public void UpdateCheckpoint(Vector2 position)
