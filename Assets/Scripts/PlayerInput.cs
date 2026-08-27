@@ -172,6 +172,7 @@ public class PlayerInput : MonoBehaviour
         }
         if(col.gameObject.CompareTag("Slope"))
         {
+            isGrounded = true;
             speedBoost = true;
             anim.SetBool("isRunning",true);
 

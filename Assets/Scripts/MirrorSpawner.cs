@@ -12,6 +12,7 @@ public class MirrorSpawner : MonoBehaviour
     public float secondsAfterSpawn = 2f;  
     public int secondsToDestroy = 3;
 
+
     PlayerInput P;
 
     void Start()
