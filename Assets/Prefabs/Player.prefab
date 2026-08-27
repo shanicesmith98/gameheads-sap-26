@@ -387,6 +387,7 @@ MonoBehaviour:
   sceneName: 
   completedLevelOne: 0
   completedLevelTwo: 0
+  Play: 0
 --- !u!1 &7367398743465087087
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
   Speed: 4
-  jumpHeight: 13
+  jumpHeight: 12
   isCrouching: 0
   Spawn: 0
   FearMeter_DepletionRate: 4
