@@ -167,7 +167,10 @@ public class PlayerInput : MonoBehaviour
         }
           if(col.gameObject.CompareTag("Spike"))
         {
+            if(!isCrouching)
+            {
             PF.TakeDamage(5);
+            }
             isGrounded = true;
         }
         if(col.gameObject.CompareTag("Slope"))
