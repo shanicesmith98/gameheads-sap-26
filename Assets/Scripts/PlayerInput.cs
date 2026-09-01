@@ -14,6 +14,7 @@ public class PlayerInput : MonoBehaviour
     public bool isCrouching = false;
 
 
+
     public bool Spawn = false;
 
     public float FearMeter_DepletionRate = 5f;
@@ -23,6 +24,8 @@ public class PlayerInput : MonoBehaviour
     private bool isGrounded;
     private bool touchingLight;
     private bool speedBoost = false;
+    private bool playingWalking = false;
+    public float soundWalkSpeed = 0.5f;
 
     PlayerFear PF;
     GameManager GM;
@@ -30,6 +33,7 @@ public class PlayerInput : MonoBehaviour
     SpriteRenderer SP;
     Rigidbody2D rb;
     Animator anim;
+    AudioManager audioManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -42,6 +46,11 @@ public class PlayerInput : MonoBehaviour
 
         SP = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+    }
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
     }
 
@@ -108,24 +117,17 @@ public class PlayerInput : MonoBehaviour
             Debug.Log("Going Left!!");
             SP.flipX = false;
             anim.SetBool("isWalking",true);
-
-
         }
          else if(moveInput < 0)
         {
             SP.flipX = true;
             Debug.Log("Going Right!!");
-             anim.SetBool("isWalking",true);
-
+            anim.SetBool("isWalking",true);
         }
         else if(moveInput == 0)
         {
             anim.SetBool("isWalking",false);
             anim.SetBool("isRunning",false);
-
-
-
-            //cue the idle animation woohoo
         }
     }
 
@@ -163,6 +165,7 @@ public class PlayerInput : MonoBehaviour
         {
             isGrounded = true;
             anim.SetBool("isJumping",false);
+            audioManager.PlaySFX(audioManager.landing);
 
         }
           if(col.gameObject.CompareTag("Spike"))

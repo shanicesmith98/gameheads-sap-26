@@ -15,6 +15,7 @@ TagManager:
   - Mirror
   - Checkpoint
   - FallDetector
+  - Audio
   layers:
   - Default
   - TransparentFX
