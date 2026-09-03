@@ -1,41 +1,35 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
 
-    public AudioClip background_one;
-    public AudioClip background_two;
 
     //public AudioClip lightsOff;
     public AudioClip landing;
     public AudioClip walking;
 
-    private string sceneName;
+    public AudioClip laser;
 
+    public AudioClip light;
 
+    public static AudioManager instance;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        sceneName = currentScene.name;
-
-        if(sceneName == "LevelOne")
+    }
+     void Awake()
+    {
+        if(instance == null)
         {
-            musicSource.clip = background_one;
+        instance = this;
+        DontDestroyOnLoad(this.gameObject);
         }
-        if(sceneName == "LevelTwo")
+        else
         {
-            musicSource.clip = background_one;
+            Destroy(this.gameObject);
         }
-        if(sceneName == "LevelThree")
-        {
-        musicSource.clip = background_one;
-        }
-        musicSource.Play();
     }
 
    public void PlaySFX(AudioClip clip)

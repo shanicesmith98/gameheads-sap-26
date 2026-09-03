@@ -51,7 +51,6 @@ public class PlayerInput : MonoBehaviour
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-
     }
 
     // Update is called once per frame
@@ -203,6 +202,8 @@ public class PlayerInput : MonoBehaviour
             Debug.Log("Is touching light");
             touchingLight = true;
             anim.SetBool("isHealing",true);
+            audioManager.PlaySFX(audioManager.light);
+
 
         }
         if(oth.CompareTag("Projectile"))
@@ -228,7 +229,6 @@ public class PlayerInput : MonoBehaviour
             Debug.Log("Is NOT touching light");
             touchingLight = false;
             anim.SetBool("isHealing",false);
-
         }
     }
 
