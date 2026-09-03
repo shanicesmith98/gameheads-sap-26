@@ -14,6 +14,8 @@ public class MirrorSpawner : MonoBehaviour
 
 
     PlayerInput P;
+    AudioManager audioManager;
+
 
     void Start()
     {
@@ -49,9 +51,15 @@ public class MirrorSpawner : MonoBehaviour
 
         }*/
     }
+     private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
+    }
 
     void LaunchProjectile()
     {
+        audioManager.PlaySFX(audioManager.laser);
         clone = (GameObject)Instantiate(Projectile, Mirror.position, Quaternion.identity);
     }
 }

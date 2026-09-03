@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3824137314901019045
+--- !u!1 &2037325730104251608
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3506046963558338754}
-  - component: {fileID: 1227743157280932480}
+  - component: {fileID: 1685310285568180832}
+  - component: {fileID: 2861811367426880572}
   m_Layer: 0
-  m_Name: SFX
+  m_Name: music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3506046963558338754
+--- !u!4 &1685310285568180832
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3824137314901019045}
+  m_GameObject: {fileID: 2037325730104251608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8832273027820840904}
+  m_Father: {fileID: 7823325311224178642}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1227743157280932480
+--- !u!82 &2861811367426880572
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3824137314901019045}
+  m_GameObject: {fileID: 2037325730104251608}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.086
+  m_PlayOnAwake: 1
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -129,7 +129,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &5087443709933925493
+--- !u!1 &7312217560389144510
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,45 +137,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8832273027820840904}
-  - component: {fileID: 7589631840975098673}
+  - component: {fileID: 7823325311224178642}
+  - component: {fileID: 946051649052311891}
   m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Audio
+  m_Name: AudioManagerMUSIC
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8832273027820840904
+--- !u!4 &7823325311224178642
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5087443709933925493}
+  m_GameObject: {fileID: 7312217560389144510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.98681, y: -22.65848, z: 0}
+  m_LocalPosition: {x: -53.88369, y: -0.35471, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3506046963558338754}
+  - {fileID: 1685310285568180832}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7589631840975098673
+--- !u!114 &946051649052311891
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5087443709933925493}
+  m_GameObject: {fileID: 7312217560389144510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 452f8565d11604b2f82f572d9e4b5662, type: 3}
+  m_Script: {fileID: 11500000, guid: ec1ff3d1ee2484055b1947e930fac37f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  SFXSource: {fileID: 1227743157280932480}
-  landing: {fileID: 8300000, guid: dc6b37b8a16034a238f7e9929e58875a, type: 3}
-  walking: {fileID: 8300000, guid: a9c8cc4fb299c404aa48ab10b55ecfcf, type: 3}
-  laser: {fileID: 8300000, guid: 02c1a7997128048328dcb95ffb23d1e9, type: 3}
-  light: {fileID: 8300000, guid: 73aa9dee0c6484dafa67f13c946f3b9e, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManagerMUSIC
+  musicSource: {fileID: 2861811367426880572}
+  background_one: {fileID: 8300000, guid: c68ab87cb64f745d3807a36749ac28a4, type: 3}
+  background_two: {fileID: 8300000, guid: 4c751c609339a4a3bba34d035d6301b4, type: 3}
+  background_three: {fileID: 8300000, guid: 5358afd5316124e29b41f0c3b62bacd5, type: 3}
+  LevelOne: 1
+  LevelTwo: 0
+  LevelThree: 0

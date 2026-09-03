@@ -15,6 +15,8 @@ public class ManagerScene : MonoBehaviour
 
     public bool Play = false;
 
+    public string audioClip;
+
     PlayerInput PI;
     PlayerFear PF;
 
@@ -65,10 +67,12 @@ public class ManagerScene : MonoBehaviour
     public void LevelOne()
     {
         SceneManager.LoadSceneAsync(1);
+        audioClip = "background_one";
     }
         public void LevelTwo()
     {
         SceneManager.LoadSceneAsync(2);
+        audioClip = "background_two";
     }
         public void LevelThree()
     {
@@ -79,4 +83,10 @@ public class ManagerScene : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
+    public void doExitGame() 
+    {
+    Application.Quit();
+    Debug.Log("this person does NOT want to play our game");
+    }
+    
 }

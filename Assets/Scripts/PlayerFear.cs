@@ -11,6 +11,7 @@ public class PlayerFear : MonoBehaviour //GameManager (I'm scared to rename the 
     public float currentFear;
     float currentOpacity;
     
+    public string sceneName;
 
 
     public Slider FearSlider;
@@ -20,11 +21,16 @@ public class PlayerFear : MonoBehaviour //GameManager (I'm scared to rename the 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Scene currentScene = SceneManager.GetActiveScene ();
+        sceneName = currentScene.name;
+
         GM = FindFirstObjectByType<GameManager>();
         currentFear = 0;
         UpdateFearUI();
-
+        if(sceneName == "LevelOne")
+        {
         currentOpacity = currentFear/maxFear;
+        }
     }
 
     public void TakeDamage(float damage)
@@ -40,8 +46,11 @@ public class PlayerFear : MonoBehaviour //GameManager (I'm scared to rename the 
         {
             FearSlider.value = currentFear / maxFear;
         }
+        if(sceneName == "LevelOne")
+        {
         Color currentOpacity = new Color(0f,0f,0f,currentFear/maxFear);
         VisHealth.color = currentOpacity;
+        }
     }
 
 
