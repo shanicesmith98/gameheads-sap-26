@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class AudioManagerMUSIC : MonoBehaviour
+public class AudioMusic : MonoBehaviour
 {
-    [SerializeField] AudioSource musicSource;
+  [SerializeField] AudioSource musicSource;
 
     public AudioClip background_one;
     public AudioClip background_two;
