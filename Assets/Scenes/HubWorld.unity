@@ -277,7 +277,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 647328324}
+      - m_Target: {fileID: 326417944}
         m_TargetAssemblyTypeName: ManagerScene, Assembly-CSharp
         m_MethodName: LevelTwo
         m_Mode: 1
@@ -403,6 +403,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285836617}
   m_CullTransparentMesh: 1
+--- !u!1001 &326417943
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 129.83638
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.62217
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481066296442233084, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737444119963677913, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+      propertyPath: m_Name
+      value: SceneManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+--- !u!114 &326417944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2600387525295603338, guid: 04aeb7deea704490297b6095021c9e0a, type: 3}
+  m_PrefabInstance: {fileID: 326417943}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005d7642834ce411582d754a0310e811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ManagerScene
 --- !u!1 &647328319
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +483,6 @@ GameObject:
   - component: {fileID: 647328321}
   - component: {fileID: 647328320}
   - component: {fileID: 647328323}
-  - component: {fileID: 647328324}
   - component: {fileID: 647328325}
   m_Layer: 0
   m_Name: Main Camera
@@ -542,21 +609,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!114 &647328324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647328319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 005d7642834ce411582d754a0310e811, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ManagerScene
-  sceneName: 
-  completedLevelOne: 0
-  completedLevelTwo: 0
 --- !u!114 &647328325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,10 +621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b39604d9b0947d39f98603310db1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelTracker
-  sceneName: 
-  doorTwo: {fileID: 285836617}
-  doorThree: {fileID: 49069921}
-  MS: {fileID: 0}
 --- !u!1 &819233026
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +1038,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 647328324}
+      - m_Target: {fileID: 326417944}
         m_TargetAssemblyTypeName: ManagerScene, Assembly-CSharp
         m_MethodName: LevelOne
         m_Mode: 1
@@ -1122,7 +1170,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 647328324}
+      - m_Target: {fileID: 326417944}
         m_TargetAssemblyTypeName: ManagerScene, Assembly-CSharp
         m_MethodName: LevelThree
         m_Mode: 1
@@ -1179,3 +1227,4 @@ SceneRoots:
   - {fileID: 647328322}
   - {fileID: 819233030}
   - {fileID: 897992086}
+  - {fileID: 326417943}

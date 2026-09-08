@@ -72,13 +72,7 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         InGameUI.gameObject.SetActive(false);
         GameOverScreen.gameObject.SetActive(true);
-        Invoke("LoadSceneAgain", 5f);
     }   
-
-    public void LoadSceneAgain()
-    {
-        SceneManager.LoadScene(0);
-    } 
     public void RestartLevel()
     {
         if(sceneName == "LevelOne")

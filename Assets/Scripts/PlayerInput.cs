@@ -33,8 +33,8 @@ public class PlayerInput : MonoBehaviour
     SpriteRenderer SP;
     Rigidbody2D rb;
     Animator anim;
-    AudioManager audioManager;
-
+    AudioPlayer AP;
+    AudioManager AM;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,16 +42,14 @@ public class PlayerInput : MonoBehaviour
         PF = FindFirstObjectByType<PlayerFear>();
         GM = FindFirstObjectByType<GameManager>();
         MS = FindFirstObjectByType<ManagerScene>();
+        AP = FindFirstObjectByType<AudioPlayer>();
+        AM = FindFirstObjectByType<AudioManager>();
+
+
 
 
         SP = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-    }
-
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-
     }
 
     // Update is called once per frame
@@ -117,17 +115,20 @@ public class PlayerInput : MonoBehaviour
             Debug.Log("Going Left!!");
             SP.flipX = false;
             anim.SetBool("isWalking",true);
+            AP.StartWalking();
         }
          else if(moveInput < 0)
         {
             SP.flipX = true;
             Debug.Log("Going Right!!");
             anim.SetBool("isWalking",true);
+            AP.StartWalking();
         }
         else if(moveInput == 0)
         {
             anim.SetBool("isWalking",false);
             anim.SetBool("isRunning",false);
+            AP.StopWalking();
         }
     }
 
@@ -138,7 +139,7 @@ public class PlayerInput : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
             isGrounded = false;
             anim.SetBool("isJumping",true);
-
+            AP.StopWalking();
         }
     }
 
@@ -148,9 +149,9 @@ public class PlayerInput : MonoBehaviour
 
             if(value.isPressed && MS.sceneName == "LevelTwo" || value.isPressed && MS.sceneName == "LevelThree" )
             {
-                isCrouching = true;
-             anim.SetBool("isCrouching",true);
-
+            isCrouching = true;
+            anim.SetBool("isCrouching",true);
+            //AP.Crouch();
             }
             else
             {  
@@ -165,8 +166,7 @@ public class PlayerInput : MonoBehaviour
         {
             isGrounded = true;
             anim.SetBool("isJumping",false);
-            audioManager.PlaySFX(audioManager.landing);
-
+            AP.Landing();
         }
           if(col.gameObject.CompareTag("Spike"))
         {
@@ -203,6 +203,7 @@ public class PlayerInput : MonoBehaviour
             Debug.Log("Is touching light");
             touchingLight = true;
             anim.SetBool("isHealing",true);
+            AM.PlaySFX(AM.light);
 
         }
         if(oth.CompareTag("Projectile"))
@@ -228,7 +229,6 @@ public class PlayerInput : MonoBehaviour
             Debug.Log("Is NOT touching light");
             touchingLight = false;
             anim.SetBool("isHealing",false);
-
         }
     }
 

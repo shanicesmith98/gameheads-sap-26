@@ -174,8 +174,6 @@ GameObject:
   - component: {fileID: 2428478105827169499}
   - component: {fileID: 8816608152456646729}
   - component: {fileID: 5083838856195205639}
-  - component: {fileID: 3689418317851296734}
-  - component: {fileID: 764515518135295574}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -352,42 +350,6 @@ MonoBehaviour:
   currentFear: 0
   FearSlider: {fileID: 0}
   VisHealth: {fileID: 0}
---- !u!114 &3689418317851296734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878605691151396195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98caca13c8d924944bcf0defd0912ca3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  isGameOver: 0
-  timeRemaining: 300
-  timerOn: 0
-  sceneName: 
-  Timer: {fileID: 0}
-  GameOverScreen: {fileID: 0}
-  InGameUI: {fileID: 0}
-  LevelComplete: {fileID: 0}
---- !u!114 &764515518135295574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878605691151396195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 005d7642834ce411582d754a0310e811, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ManagerScene
-  sceneName: 
-  completedLevelOne: 0
-  completedLevelTwo: 0
-  Play: 0
 --- !u!1 &7367398743465087087
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +467,7 @@ MonoBehaviour:
   Spawn: 0
   FearMeter_DepletionRate: 4
   FearMeter_HealingRate: 8
+  soundWalkSpeed: 0.5
 --- !u!114 &1910748874915023520
 MonoBehaviour:
   m_ObjectHideFlags: 0
