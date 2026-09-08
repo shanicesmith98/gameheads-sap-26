@@ -18327,7 +18327,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5398671798637760888, guid: 76e2af69d76134d23b24da348399885b, type: 3}
       propertyPath: m_Name
-      value: RestartTrigger (1)
+      value: RestartTrigger 2
       objectReference: {fileID: 0}
     - target: {fileID: 5453134456411212600, guid: 76e2af69d76134d23b24da348399885b, type: 3}
       propertyPath: m_Size.x
