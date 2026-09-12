@@ -20,11 +20,17 @@ public class ManagerScene : MonoBehaviour
     PlayerInput PI;
     PlayerFear PF;
 
+    public GameObject ControlsMenu;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene ();
         sceneName = currentScene.name;
+        if(sceneName == "MainMenu")
+        {
+        ControlsMenu.gameObject.SetActive(false);
+        }
 
 
         PI = FindFirstObjectByType<PlayerInput>();
@@ -38,9 +44,6 @@ public class ManagerScene : MonoBehaviour
         {
             PF.DarkLevel = true;
         }
-  
-        
-
     }
     // Update is called once per frame
     void Update()
@@ -77,7 +80,6 @@ public class ManagerScene : MonoBehaviour
         public void LevelThree()
     {
         SceneManager.LoadSceneAsync(3);
-
     }
      public void MainMenu()
     {
@@ -88,5 +90,12 @@ public class ManagerScene : MonoBehaviour
     Application.Quit();
     Debug.Log("this person does NOT want to play our game");
     }
-    
+    public void ExitControls()
+    {
+        ControlsMenu.gameObject.SetActive(false);
+    }
+    public void OpenControls()
+    {
+        ControlsMenu.gameObject.SetActive(true);
+    } 
 }
