@@ -16,6 +16,7 @@ public class PlayerInput : MonoBehaviour
 
 
     public bool Spawn = false;
+    public bool LevelComplete;
 
     public float FearMeter_DepletionRate = 5f;
     public float FearMeter_HealingRate = 5f;
@@ -215,7 +216,7 @@ public class PlayerInput : MonoBehaviour
         }
          if(oth.CompareTag("EndOfLevel"))
         {
-            GM.LevelComplete.gameObject.SetActive(true);
+            GM.LevelCompleted();
         }
         if(oth.CompareTag("Mirror"))
         {

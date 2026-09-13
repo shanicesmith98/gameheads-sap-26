@@ -21,15 +21,18 @@ public class GameManager : MonoBehaviour
 
 
     ManagerScene SM;
+    //LevelTracker LT;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         GameOverScreen.gameObject.SetActive(false);
         InGameUI.gameObject.SetActive(true);
-        LevelComplete.gameObject.SetActive(false);
+        //LevelComplete.gameObject.SetActive(false);
 
 
         SM = FindFirstObjectByType<ManagerScene>();
+        //LT = FindFirstObjectByType<LevelTracker>();
+
         Scene currentScene = SceneManager.GetActiveScene ();
 
         sceneName = currentScene.name;
@@ -73,6 +76,18 @@ public class GameManager : MonoBehaviour
         InGameUI.gameObject.SetActive(false);
         GameOverScreen.gameObject.SetActive(true);
     }   
+    public void LevelCompleted()
+    {
+        /*if(sceneName == "LevelOne")
+        {
+            LT.LevelOneCompleted = true;
+        }
+        if(sceneName == "LevelTwo")
+        {
+            LT.LevelTwoCompleted = true;
+        }*/
+        LevelComplete.gameObject.SetActive(true);
+    }
     public void RestartLevel()
     {
         if(sceneName == "LevelOne")

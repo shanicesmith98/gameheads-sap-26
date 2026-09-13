@@ -36,7 +36,7 @@
             ],
             "bindings": [
                 {
-                    "name": "2D Vector",
+                    "name": "WAD",
                     "id": "0f744ef6-e5b0-47f2-918f-1f292a167027",
                     "path": "2DVector",
                     "interactions": "",
@@ -102,6 +102,61 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "ARROWS",
+                    "id": "04e42842-e1db-4882-b412-034e18a567f7",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "90e0fa23-8911-493b-aed3-61809a1819a1",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "a6225554-4958-4272-8caa-186503df1e3f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "7b2df872-57bc-491d-a7af-4d07d238e98d",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "511ebfb8-97bf-4e88-95f2-4cb33c8570fb",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "e140bee4-2abf-4274-b1ba-7a8e162ca0d5",
                     "path": "<Gamepad>/buttonSouth",
@@ -115,10 +170,21 @@
                 {
                     "name": "",
                     "id": "970fef97-d31a-4978-a995-b00014dea97d",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": ";New Control Scheme;New Control Scheme1",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df3b631c-885e-42ad-a6e0-52be2f3f1732",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false

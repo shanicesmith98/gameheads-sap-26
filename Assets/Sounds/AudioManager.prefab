@@ -326,9 +326,11 @@ MonoBehaviour:
   background_one: {fileID: 8300000, guid: c68ab87cb64f745d3807a36749ac28a4, type: 3}
   background_two: {fileID: 8300000, guid: 4c751c609339a4a3bba34d035d6301b4, type: 3}
   background_three: {fileID: 8300000, guid: 5358afd5316124e29b41f0c3b62bacd5, type: 3}
+  background_four: {fileID: 8300000, guid: f3f428778f2b3445e912ca5290aa74d2, type: 3}
   LevelOne: 0
   LevelTwo: 1
   LevelThree: 0
+  LevelFour: 0
 --- !u!114 &8446357102678191678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,7 +394,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
