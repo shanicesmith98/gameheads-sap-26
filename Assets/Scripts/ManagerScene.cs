@@ -66,6 +66,17 @@ public class ManagerScene : MonoBehaviour
     {         
         SceneManager.LoadSceneAsync(4);
     }
+    public void SpaceShipStartButton()
+    {
+        StartCoroutine(Blastoff(3.5f));
+    }
+      private IEnumerator Blastoff(float time)
+    {
+        Play = true;
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadSceneAsync(4);
+
+    }
 
     public void LevelOne()
     {
