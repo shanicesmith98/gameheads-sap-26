@@ -12,6 +12,8 @@ public class PlayerInput : MonoBehaviour
     public float jumpHeight = 5f;
 
     public bool isCrouching = false;
+    public bool canMove = true;
+
 
 
 
@@ -25,8 +27,8 @@ public class PlayerInput : MonoBehaviour
     private bool isGrounded;
     private bool touchingLight;
     private bool speedBoost = false;
-    private bool playingWalking = false;
-    public float soundWalkSpeed = 0.5f;
+
+    public bool PlayCutscene = false;
 
     PlayerFear PF;
     GameManager GM;
@@ -80,7 +82,7 @@ public class PlayerInput : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!GM.isGameOver)
+        if(!GM.isGameOver && canMove)
         {
             if(speedBoost)
             {
@@ -102,7 +104,7 @@ public class PlayerInput : MonoBehaviour
     public void OnMove(InputValue value)
     {        
         Debug.Log($"MoveInput: {moveInput}");
-        if(!GM.isGameOver)
+        if(!GM.isGameOver && canMove)
         {
         moveInput = value.Get<Vector2>().x;
         }
@@ -135,7 +137,7 @@ public class PlayerInput : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        if(value.isPressed && isGrounded && !GM.isGameOver)
+        if(value.isPressed && isGrounded && !GM.isGameOver && canMove)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
             isGrounded = false;
@@ -148,7 +150,7 @@ public class PlayerInput : MonoBehaviour
     {
         Debug.Log("Crouching");
 
-            if(value.isPressed && MS.sceneName == "LevelTwo" || value.isPressed && MS.sceneName == "LevelThree" )
+            if(value.isPressed && MS.sceneName == "LevelTwo"|| value.isPressed && MS.sceneName == "LevelThree")
             {
             isCrouching = true;
             anim.SetBool("isCrouching",true);
@@ -187,6 +189,10 @@ public class PlayerInput : MonoBehaviour
         if(col.gameObject.CompareTag("Future"))
         {
             GM.GameOver();
+        }
+        if(col.gameObject.CompareTag("EvilMC"))
+        {
+            PlayCutscene = true;
         }
     }
     void OnCollisionExit2D(Collision2D col)

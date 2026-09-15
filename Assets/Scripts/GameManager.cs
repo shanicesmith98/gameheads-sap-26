@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GameOverScreen.gameObject.SetActive(false);
-        InGameUI.gameObject.SetActive(true);
+        //InGameUI.gameObject.SetActive(true);
         //LevelComplete.gameObject.SetActive(false);
 
 
