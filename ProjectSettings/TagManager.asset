@@ -16,6 +16,7 @@ TagManager:
   - Checkpoint
   - FallDetector
   - Audio
+  - EvilMC
   layers:
   - Default
   - TransparentFX
