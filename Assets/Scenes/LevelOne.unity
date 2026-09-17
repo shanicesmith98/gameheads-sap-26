@@ -261,17 +261,21 @@ PrefabInstance:
       propertyPath: FearSlider
       value: 
       objectReference: {fileID: 1952265470}
+    - target: {fileID: 5083838856195205639, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
+      propertyPath: currentFear
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7367398743465087087, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8195145350109520270, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -65.04
+      value: 57.4
       objectReference: {fileID: 0}
     - target: {fileID: 8195145350109520270, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9
+      value: -14.6
       objectReference: {fileID: 0}
     - target: {fileID: 8195145350109520270, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16634,6 +16638,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 353298052}
     - target: {fileID: 6167399733742201482, guid: 08961f48a16d546be9dfa560197146ad, type: 3}
+      propertyPath: isGameOver
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6167399733742201482, guid: 08961f48a16d546be9dfa560197146ad, type: 3}
       propertyPath: LevelComplete
       value: 
       objectReference: {fileID: 293072864}
@@ -16708,10 +16716,6 @@ PrefabInstance:
     - target: {fileID: 1153796141602585951, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
       propertyPath: m_Name
       value: In-GameUI_Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153796141602585951, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1986869313232465492, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
       propertyPath: m_Pivot.x
@@ -16793,9 +16797,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2074287421956691587, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+    - target: {fileID: 6285925489695250090, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.6698113
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285925489695250090, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.2938323
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285925489695250090, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.49201894
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285925489695250090, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4289416061
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16874,7 +16890,7 @@ PrefabInstance:
     - target: {fileID: 2197194214278055904, guid: 135a3db36dfb24ce5bdfcff6f3696e07, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 317660039}
+      objectReference: {fileID: 776176357310879789}
     - target: {fileID: 3845273353522940363, guid: 135a3db36dfb24ce5bdfcff6f3696e07, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -16958,10 +16974,6 @@ PrefabInstance:
     - target: {fileID: 4433431734747980684, guid: 135a3db36dfb24ce5bdfcff6f3696e07, type: 3}
       propertyPath: m_Name
       value: GameOver_Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 4433431734747980684, guid: 135a3db36dfb24ce5bdfcff6f3696e07, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17084,10 +17096,6 @@ PrefabInstance:
     - target: {fileID: 6214674156837206693, guid: 64dbb175476e142bd990d309b9bda841, type: 3}
       propertyPath: m_Name
       value: LevelComplete_Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6214674156837206693, guid: 64dbb175476e142bd990d309b9bda841, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6293569977058658193, guid: 64dbb175476e142bd990d309b9bda841, type: 3}
       propertyPath: m_Pivot.x
@@ -17240,11 +17248,11 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 26888993}
   - {fileID: 168991051}
-  - {fileID: 1871572671464277326}
+  - {fileID: 26888993}
   - {fileID: 2972135372219002722}
   - {fileID: 4389969694264638252}
+  - {fileID: 1871572671464277326}
   - {fileID: 208444648}
   - {fileID: 1107238048}
   - {fileID: 796312789}

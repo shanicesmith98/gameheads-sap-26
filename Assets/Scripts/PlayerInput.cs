@@ -8,27 +8,32 @@ public class PlayerInput : MonoBehaviour
 {
     private float moveInput;
 
+    [Header("------------Player Movement Control------------")]
     public float Speed = 5f;
     public float jumpHeight = 5f;
-
+    [Header("------------Abilities------------")]
     public bool isCrouching = false;
-    public bool canMove = true;
+
+    public bool ZeroGravity = false;
+    public float addedJump;
+    public bool runFaster = false;
+    public float addedSpeed = 1.5f;
 
 
-
-
-    public bool Spawn = false;
-    public bool LevelComplete;
-
+    [Header("------------Fear Meter------------")]
     public float FearMeter_DepletionRate = 5f;
     public float FearMeter_HealingRate = 5f;
 
+    [Header("------------coding stuff idk------------")]
+    public bool canMove = true;
+    public bool Spawn = false;
+    public bool LevelComplete;
+    public bool PlayCutscene = false;
 
     private bool isGrounded;
     private bool touchingLight;
     private bool speedBoost = false;
 
-    public bool PlayCutscene = false;
 
     PlayerFear PF;
     GameManager GM;
@@ -93,10 +98,15 @@ public class PlayerInput : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(moveInput * (Speed*0.5f), rb.linearVelocityY);
             }
+            else if(runFaster)
+            {
+            rb.linearVelocity = new Vector2(moveInput * (Speed * 1.5f), rb.linearVelocityY);
+            anim.SetBool("isRunning",true);
+            }
             else
             {
-            rb.linearVelocity = new Vector2(moveInput * Speed, rb.linearVelocityY);
-            anim.SetBool("isRunning",false);
+                rb.linearVelocity = new Vector2(moveInput * (Speed ), rb.linearVelocityY);
+                anim.SetBool("isRunning",false);
             }
         }
     }
@@ -139,7 +149,14 @@ public class PlayerInput : MonoBehaviour
     {
         if(value.isPressed && isGrounded && !GM.isGameOver && canMove)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocityX, jumpHeight);
+            if(ZeroGravity)
+            {
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, (jumpHeight + addedJump));
+            }
+            else
+            {
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, (jumpHeight));
+            }
             isGrounded = false;
             anim.SetBool("isJumping",true);
             AP.StopWalking();

@@ -78,15 +78,14 @@ public class GameManager : MonoBehaviour
     }   
     public void LevelCompleted()
     {
-        /*if(sceneName == "LevelOne")
+        if(sceneName == "LevelThree")
         {
-            LT.LevelOneCompleted = true;
+            SM.LevelFour();
         }
-        if(sceneName == "LevelTwo")
+        else
         {
-            LT.LevelTwoCompleted = true;
-        }*/
         LevelComplete.gameObject.SetActive(true);
+        }
     }
     public void RestartLevel()
     {
