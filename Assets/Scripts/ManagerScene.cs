@@ -92,6 +92,10 @@ public class ManagerScene : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(3);
     }
+    public void LevelFour()
+    {
+        SceneManager.LoadSceneAsync(5);
+    }
      public void MainMenu()
     {
         SceneManager.LoadSceneAsync(0);

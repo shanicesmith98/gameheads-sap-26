@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HubWorld.unity
     guid: 8314410571a53442aaab319cbdde4414
+  - enabled: 1
+    path: Assets/Scenes/LevelFour.unity
+    guid: 00568a63b4a3b4703ad4e05fc871021c
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
