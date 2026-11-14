@@ -465,11 +465,18 @@ MonoBehaviour:
   Speed: 4
   jumpHeight: 12
   isCrouching: 0
+  ZeroGravity: 0
+  addedJump: 0
+  runFaster: 0
+  addedSpeed: 1.5
+  Ground:
+    serializedVersion: 2
+    m_Bits: 64
+  FearMeter_DepletionRate: 4
+  FearMeter_HealingRate: 8
   canMove: 1
   Spawn: 0
   LevelComplete: 0
-  FearMeter_DepletionRate: 4
-  FearMeter_HealingRate: 8
   PlayCutscene: 0
 --- !u!114 &1910748874915023520
 MonoBehaviour:

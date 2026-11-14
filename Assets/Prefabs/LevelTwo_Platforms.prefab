@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 395159347328414766}
   - component: {fileID: 4989612129560435385}
   - component: {fileID: 4566077456520854756}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LevelTwo_Platforms
   m_TagString: Ground
   m_Icon: {fileID: 0}

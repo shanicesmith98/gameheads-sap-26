@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5235925157091589112}
   - component: {fileID: 5332780090655908468}
   - component: {fileID: 7022906846047036391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LevelOne_Platforms
   m_TagString: Ground
   m_Icon: {fileID: 0}

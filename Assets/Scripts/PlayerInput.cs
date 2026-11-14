@@ -19,6 +19,7 @@ public class PlayerInput : MonoBehaviour
     public bool runFaster = false;
     public float addedSpeed = 1.5f;
 
+    public LayerMask Ground;
 
     [Header("------------Fear Meter------------")]
     public float FearMeter_DepletionRate = 5f;
@@ -30,10 +31,10 @@ public class PlayerInput : MonoBehaviour
     public bool LevelComplete;
     public bool PlayCutscene = false;
 
-    private bool isGrounded;
+    //private bool isGrounded;
     private bool touchingLight;
     private bool speedBoost = false;
-
+    private BoxCollider2D coll;
 
     PlayerFear PF;
     GameManager GM;
@@ -46,7 +47,6 @@ public class PlayerInput : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         PF = FindFirstObjectByType<PlayerFear>();
         GM = FindFirstObjectByType<GameManager>();
         MS = FindFirstObjectByType<ManagerScene>();
@@ -55,9 +55,10 @@ public class PlayerInput : MonoBehaviour
 
 
 
-
+        rb = GetComponent<Rigidbody2D>();
         SP = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        coll = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -147,7 +148,7 @@ public class PlayerInput : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        if(value.isPressed && isGrounded && !GM.isGameOver && canMove)
+        if(value.isPressed && isGrounded() && !GM.isGameOver && canMove)
         {
             if(ZeroGravity)
             {
@@ -157,9 +158,20 @@ public class PlayerInput : MonoBehaviour
             {
             rb.linearVelocity = new Vector2(rb.linearVelocityX, (jumpHeight));
             }
-            isGrounded = false;
+            //isGrounded = false;
             anim.SetBool("isJumping",true);
             AP.StopWalking();
+        }
+    }
+    private bool isGrounded()
+    {
+        if(Physics2D.BoxCast(coll.bounds.center,coll.bounds.size, 0f, -Vector2.up, .1f, Ground))
+        {
+        return true;
+        }
+        else
+        {
+        return false;
         }
     }
 
@@ -184,9 +196,13 @@ public class PlayerInput : MonoBehaviour
     {
         if(col.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true;
             anim.SetBool("isJumping",false);
             AP.Landing();
+        }
+         if(col.gameObject.CompareTag("Slope"))
+        {
+            speedBoost = true;
+            anim.SetBool("isRunning",true);
         }
           if(col.gameObject.CompareTag("Spike"))
         {
@@ -194,14 +210,7 @@ public class PlayerInput : MonoBehaviour
             {
             PF.TakeDamage(5);
             }
-            isGrounded = true;
-        }
-        if(col.gameObject.CompareTag("Slope"))
-        {
-            isGrounded = true;
-            speedBoost = true;
-            anim.SetBool("isRunning",true);
-
+            //isGrounded = true;
         }
         if(col.gameObject.CompareTag("Future"))
         {

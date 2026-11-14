@@ -265,6 +265,10 @@ PrefabInstance:
       propertyPath: currentFear
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6514641453030365616, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
+      propertyPath: Ground.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7367398743465087087, guid: 343190ec91aee4d3cb46767c91f6bbda, type: 3}
       propertyPath: m_Name
       value: Player
@@ -9706,7 +9710,7 @@ GameObject:
   - component: {fileID: 2130790972}
   - component: {fileID: 2130790971}
   - component: {fileID: 2130790970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walls
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16795,6 +16799,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1986869313232465492, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2074287421956691587, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6285925489695250090, guid: 38427fb8547ab4b61be5cd737a2e182f, type: 3}
