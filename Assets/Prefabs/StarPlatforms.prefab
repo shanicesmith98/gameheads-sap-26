@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3341917782506635437}
   - component: {fileID: -7548462254637624879}
   - component: {fileID: -2846789082916027473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: StarPlatforms
   m_TagString: Ground
   m_Icon: {fileID: 0}
